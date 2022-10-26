@@ -1,0 +1,41 @@
+
+body {
+  background-color: black;
+}
+
+#navigation_bg {
+  background-color: transparent;
+}
+
+#navigation_wrapper {
+  margin: auto;
+  float: none;
+  text-align: center;
+  max-width: 100%;
+  padding: 0;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.beh-logo {
+    width: 200px;
+    height: 100px,
+  }
+
+  #beh-heading {
+    font-size: 20px;
+    font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    color: #e678f4;
+}
+
+/* .beh-promo {
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black
+} */
