@@ -12,23 +12,23 @@ body {
 }
 
 .bg1 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/chris_branch/docs/Logo.jpg?raw=true");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/main/docs/Logo.jpg?raw=true");
   min-height: 800px;
   margin-top: 50;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 65%
+  background-size: 100%
 }
 
 /* change */
 
-#con1 {
+/* #con1 {
   background-color: black;
-  }
+  } */
 
 .bg2 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/chris_branch/docs/Meindie.PNG?raw=true");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/main/docs/Meindie.PNG?raw=true");
   min-height: 800px;
   margin-top: 50;
   background-attachment: fixed;
