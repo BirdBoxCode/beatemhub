@@ -1,9 +1,83 @@
 
-body {
+html, body {
   background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-#navigation_bg {
+body {
+  font-family: 'slick', sans-serif;;
+  font-weight: lighter;
+}
+
+/* NAVBAR */
+
+ /* nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+}
+
+ nav ul {
+  line-height: 60px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  padding-right: 0px;
+  transition: 1s;
+} */
+
+/* nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0px 30px;;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+} */
+
+/* Body */
+
+.bg1 {
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/chris_simple_site/docs/Logo.jpg?raw=true");
+  min-height: 800px;
+  margin-top: 50;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%
+}
+
+#con1 {
+  background-color: black;
+  }
+
+.bg2 {
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/chris_simple_site/docs/Meindie.PNG?raw=true");
+  min-height: 800px;
+  margin-top: 50;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 40px;
+}
+
+
+
+
+/* #navigation_bg {
   background-color: transparent;
 }
 
@@ -15,21 +89,23 @@ body {
   padding: 0;
   height: auto;
   box-sizing: border-box;
-}
+} */
 
-.beh-logo {
+
+
+/* .beh-logo {
     width: 200px;
     height: 100px,
-  }
+  } */
 
-  #beh-heading {
+  /* #beh-heading {
     font-size: 20px;
     font-family: Open Sans, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 600;
     font-style: normal;
     line-height: normal;
     color: #e678f4;
-}
+} */
 
 /* .beh-promo {
   position: absolute;
