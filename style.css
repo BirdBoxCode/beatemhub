@@ -1,9 +1,11 @@
 
+@media screen and (max-width: 481px){
+
 html, body {
   background-color: black;
-  margin: 0;
+  /* margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100%; */
 }
 
 body {
@@ -38,7 +40,7 @@ body {
   color: white; font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 40px;
 }
 
-
+}
 
 
 /* #navigation_bg {
