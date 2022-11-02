@@ -117,7 +117,7 @@ flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 /* set for pushing down content */
-max-height: 300px;
+max-height: 350px;
 }
 
 .mobile-menu {
