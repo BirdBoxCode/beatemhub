@@ -1,7 +1,23 @@
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}
+
 window.addEventListener("scroll", function () {
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+function onClickHandler(e){
+  var content = document.getElementById("body");
+
+  if(hamburger-icon.checked){
+    content.setAttribute( 'class', 'push-down' );
+
+  }else{
+    content.setAttribute( 'class', '' );
+  }
+}
 
 // window.scroll({
 //   top: 2500,

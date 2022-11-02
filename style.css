@@ -1,14 +1,140 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "slick", sans-serif;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  /* font: 400 15px/1.8 "slick", sans-serif; */
   color: #777;
-  scroll-behavior: smooth;
 }
 
 /* STYLING OF HEADER */
+
+header a {
+  text-decoration: none;
+}
+
 header {
+  position: fixed;
+  background: black;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  z-index: 1000;
+  transition: 0.6s;
+  font-weight: bolder;
+  width: 100%;
+}
+
+.beh-nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+ul a {
+  color: white;
+  width: 100%;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.sticky {
+  padding: 20px 00px;
+  background: black;
+  /* opacity: 0.7; */
+  transition: 0.6s;
+  width: 100%;
+}
+
+.sticky ul li a {
+  color: white;
+  font-weight: bolder;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 20px;
+  transition: 0.6s;
+}
+
+.open .bar1 {
+-webkit-transform: rotate(-180deg) translate(-6px, 6px);
+transform: rotate(-180deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+-webkit-transform: rotate(180deg) translate(-6px, -8px);
+transform: rotate(180deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+/* set for pushing down content */
+max-height: 300px;
+}
+
+.mobile-menu {
+  display: none;
+  position: flex;
+  font-size: 40px;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 30px);
+  width: 100%;
+  background-color: black;
+}
+
+#body.push-down{
+  margin-top:250px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+/* header {
   position: fixed;
   top: 0;
   left: 0;
@@ -33,33 +159,17 @@ header ul li {
   padding-right: 10px;
 }
 header ul li a {
-  font-family: 'slick', sans-serif;
   margin: 0 15px;
   text-decoration: none;
   color: #a204ba;
   letter-spacing: 2px;
   font-weight: 500px;
   padding: 10px 10px;
-}
-
-/* !!! TAKING OUT FOR NOW AS NOT WORKING !!! */
-/* .active-btn,
-ul li a:hover {
-  background: rgb(0, 82, 71);
-  padding: 10px;
 } */
 
-.sticky {
-  padding: 20px 00px;
-  background: rgb(15, 27, 29);
-  opacity: 0.7;
-  transition: 0.6s;
-}
 
-.sticky ul li a {
-  color: #a204ba;
-  font-weight: bolder;
-}
+
+
 
 /* END OF HEADER */
 
@@ -202,25 +312,30 @@ h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-width: 600px) {
-  .bgimg-1,
+/* @media only screen and (max-width: 600px) { */
+  /* .bgimg-1,
   .bgimg-2,
-  .bgimg-3 {
+  .bgimg-3
+  .bgimg-4
+  .bgimg-5
+  .bgimg-6
+  .bgimg-7
+  .bgimg-8
+  .bgimg-9
+  .bgimg-10 {
     background-attachment: scroll;
-  }
+  } */
 
-  header {
-    padding: 20px 0px;
-    margin: 0;
-  }
+  /* header nav {
+    display: none;
+  } */
 
-  header ul li a {
+  /* header ul li a {
     padding: 2px 1px;
     font-weight: none;
     font-size: 14px;
   }
   .sticky {
     padding: 2px 2px;
-    font-weight: none;
-  }
-}
+    font-weight: none; */
+  /* } */
