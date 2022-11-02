@@ -73,6 +73,8 @@ ul li:hover {
   font-weight: bolder;
 }
 
+/* Mobile Nav */
+
 #hamburger-icon {
   margin: auto 0;
   display: none;
@@ -125,6 +127,8 @@ max-height: 300px;
   margin-top:250px;
 }
 
+/* End mobile nav */
+
 @media only screen and (max-width: 600px) {
   header nav {
     display: none;
@@ -134,42 +138,6 @@ max-height: 300px;
     display: block;
   }
 }
-/* header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 20px;
-  z-index: 1000;
-  transition: 0.6s;
-}
-
-header ul {
-  position: relative;
-  padding-left: 15.5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header ul li {
-  list-style: none;
-  padding-right: 10px;
-}
-header ul li a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #a204ba;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  padding: 10px 10px;
-} */
-
-
-
-
 
 /* END OF HEADER */
 
@@ -272,8 +240,6 @@ h3,
 p {
   text-align: center;
 }
-
-
 
 .caption {
   position: absolute;
