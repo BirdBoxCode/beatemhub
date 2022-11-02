@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <ul style>
-        <li><a href="#" class="active-btn">-Home-</a></li>
-        <li><a href="#aboutarea">-About-</a></li>
-        <li><a href="#servicesarea">-Services-</a></li>
-        <li><a href="#clientarea">-References-</a></li  >
-        <li><a href="#contactarea">-Contact-</a></li>
-      </ul>
-    </header>
-    <!-- ***************************************END OF HEADER*********************************************** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600&family=Montserrat+Alternates:wght@200&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 
-    <div class="bgimg-1">
+    <title>Beat em Hub</title>
+  </head>
+
+  <body id="body">
+    <div class = "container">
+      <header>
+        <nav id ="beh-nav">
+          <ul>
+            <li><a href="#" class="active-btn">Home</a></li>
+            <li><a href="#aboutarea">About</a></li>
+            <li><a href="#servicesarea">Services</a></li>
+            <li><a href="#clientarea">References</a></li  >
+            <li><a href="#contactarea">Contact</a></li>
+          </ul>
+        </nav>
+        <div class ="mobile-nav">
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="#" class="active-btn">Home</a></li>
+              <li><a href="#aboutarea">About</a></li>
+              <li><a href="#servicesarea">Services</a></li>
+              <li><a href="#clientarea">References</a></li  >
+              <li><a href="#contactarea">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- social icons -->
+        <div id="social-icons">
+          <ul class = "icons">
+            <li>
+              <a href="https://discord.gg/Sd22pa438Q" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/beatemhub/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/BeatEmHub" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/beat-em-hub/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meetup.com/de-DE/clash-of-nerds/" target="_blank">
+                <i class="fa-brands fa-meetup"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
     </div>
+    <!-- ************END OF HEADER*********** -->
+
+    <div class="bgimg-1"></div> <!--Top logo -->
+
     <div id ="con1">            <!--- VIMEO VIDEO-->
       <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/763125121?h=d01bcdcc99&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Beat em Hub"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
     </div>
@@ -27,7 +83,7 @@
 
     <div style="position: relative;">
       <div class="bg-dark">
-        <h3 class="light-text">We are Beat 'Em Hub</h3>
+        <h1 class="light-text">We are Beat 'Em Hub</h1>
         <p>
         We are a Berlin-based Gaming Network who specializes in creating immersive gaming events in order to give a space for both gamers and
         non-gamers alike, including professionals within the gaming industry to play, connect and foster creativity.
@@ -41,109 +97,91 @@
         </p>
       </div>
     </div>
-
+  </div>
   <!-- set of pictures  -->
-    <div class="bgimg-2">
-      <div class="caption">
-        <span class="border">Indie Gaming</span>
-      </div>
+
+  <div class="bgimg-2">
+    <div class="caption">
+      <span class="border">Indie Gaming</span>
     </div>
-
-    <div class="bgimg-3">
-      <div class="caption">
-      </div>
+  </div>
+  <div class="bgimg-3">
+    <div class="caption">
     </div>
-
-
-    <div class="bgimg-4">
-      <div class="caption">
-        <span class="border"> Retro Gaming </span>
-      </div>
+  </div>
+  <div class="bgimg-4">
+    <div class="caption">
+      <span class="border"> Retro Gaming </span>
     </div>
-
-    <div class="bgimg-5">
-      <div class="caption">
-        <span class="border"> Virtual Reality</span>
-      </div>
+  </div>
+  <div class="bgimg-5">
+    <div class="caption">
+      <span class="border"> Virtual Reality</span>
     </div>
-
-    <div class="bgimg-6">
-      <div class="caption">
-        <span class="border"> Magic The Gathering</span>
-      </div>
+  </div>
+  <div class="bgimg-6">
+    <div class="caption">
+      <span class="border"> Magic The Gathering</span>
     </div>
-
-    <div class="bgimg-7">
-      <div class="caption">
-      </div>
+  </div>
+  <div class="bgimg-7">
+    <div class="caption">
     </div>
+  </div>
 
-    <a id="servicesarea"></a> <!-- anchor link for navbar  -->
+  <a id="servicesarea"></a> <!-- anchor link for navbar  -->
 
-    <div style="position: relative; margin-bottom: -30px;">
-      <div class="bg-dark">
-        <h3 class="light-text">Services</h3>
-        <p>
-          We try to cover most aspects of the gaming world from Retro & Moddern Gaming, Indie Gaming, Virtual Reality,
-          Lan Parties, Card Games (e.g. Magic the Gathering), Pen & Paper (e.g. Dungeons & Dragons), Boardgames, Esports, Tournaments.
-<p>
-          For events, we enable a variety of gaming, indoor areas (e.g. bars, clubs), & outdoor areas (e.g. festivals, food fairs),
-          Branded Events (e.g. our arcade machines with customized branding), Live Music, Streaming Services, Event Moderation,
-          On-Site Maintenance & Support, Content Production
-        </p><p>
-          Gaming Areas can be implemented almost anywhere!
-          From bars, clubs, festivals, corporate events, schools, community & cultural events and more!
-        </p>
-        </p>
-      </div> -->
+  <div style="position: relative; margin-bottom: -30px;">
+    <div class="bg-dark">
+      <h3 class="light-text">Services</h3>
+      <p> We try to cover most aspects of the gaming world from Retro & Moddern     Gaming, Indie Gaming, Virtual Reality,Lan Parties, Card Games (e.g. Magic the   Gathering), Pen & Paper (e.g. Dungeons & Dragons), Boardgames, Esports,     Tournaments.</p>
+      <p> For events, we enable a variety of gaming, indoor areas (e.g. bars, clubs), & outdoor areas (e.g. festivals, food fairs),
+      Branded Events (e.g. our arcade machines with customized branding), Live Music, Streaming Services, Event Moderation, On-Site Maintenance & Support, Content Production.</p>
+      <p>Gaming Areas can be implemented almost anywhere!
+      From bars, clubs, festivals, corporate events, schools, community & cultural events and more!</p>
     </div>
+  </div>
 
-    <div class="bgimg-8">
-      <div class="caption">
-        <span class="border"> Tournaments </span>
-      </div>
+  <div class="bgimg-8">
+    <div class="caption">
+      <span class="border"> Tournaments </span>
     </div>
-
-    <div class="bgimg-9">
-      <div class="caption">
-        <span class="border"> High Score Challenges</span>
-      </div>
+  </div>
+  <div class="bgimg-9">
+    <div class="caption">
+      <span class="border"> High Score Challenges</span>
     </div>
-
-    <div class="bgimg-10">
-      <div class="caption">
-        <span class="border"> Festivals</span>
-      </div>
+  </div>
+  <div class="bgimg-10">
+    <div class="caption">
+      <span class="border"> Festivals</span>
     </div>
-
-    <a id="clientarea"></a>
-    <div style="position: relative;">
-      <div class="bg-dark">
-        <h3 class="light-text">
-          Partners & Clients
-        </h3>
-        <p><p>
-          Our main partners include Dexai Arts, Nerdistan, Tulpar Notebooks, Overhead Berlin,
-          Fraktion Nimmersatt, Games Academy
-        </p><p>
-          Clients include Spotify / MTV / re:publica / Melt / Splash! / Red Bull /
-          Bucht der Träumer / Sternfest / About You Pangea / Sisyfass / Alte Kantine /
-          We are Developers / Games Week Berlin / Warehouse Visions / ICS / GoodLive / Wellenwerk / Zenner
-        </p>
-        </p>
-      </div>
+  </div>
+  <a id="clientarea"></a>
+  <div style="position: relative;">
+    <div class="bg-dark">
+      <h3 class="light-text">Partners & Clients</h3>
+      <p>Our main partners include Dexai Arts, Nerdistan, Tulpar Notebooks, Overhead Berlin, Fraktion Nimmersatt, Games Academy.</p>
+      <p>Clients include Spotify / MTV / re:publica / Melt / Splash! / Red Bull /
+      Bucht der Träumer / Sternfest / About You Pangea / Sisyfass / Alte Kantine /
+      We are Developers / Games Week Berlin / Warehouse Visions / ICS / GoodLive / Wellenwerk / Zenner</p>
     </div>
+  </div>
 
-    <div class="bgimg-1">
-      <a id="contactarea"></a>
-      <div class="caption">
-        <span class="border">Join our Discord Community channel for updates!</span>
-      </div>
-
+  <div class="bgimg-1">
+    <a id="contactarea"></a>
+    <div class="caption">
+      <span class="border">Join our Discord Community channel for updates!</span>
     </div>
-    <footer class="center footer">
-      Beat 'em Hub (an afflilate of Dexai Arts UG)
-    </footer>
-    <script src="script.js"></script>
+  </div>
+
+  <footer class="center footer">
+    Beat 'em Hub (an afflilate of Dexai Arts UG)
+  </footer>
+
+  <script src="script.js"></script>
+
+    <!-- end oof container -->
   </body>
+  <script src="index.js"></script>
 </html>
