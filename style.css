@@ -175,8 +175,6 @@ list-inline {
 
 /******************************** END OF HEADER ********************************/
 
-
-
 .bgimg-1,
 .bgimg-2,
 .bgimg-4,
@@ -286,6 +284,7 @@ h3 {
   color: #f7f7f7;
 }
 
+
 .caption {
   position: absolute;
   left: 0;
@@ -305,7 +304,6 @@ h3 {
   letter-spacing: 10px;
 }
 
-
 .footer {
   background: rgba(45, 44, 44, 0);
   color: #0eebdc;
@@ -316,6 +314,7 @@ h3 {
   text-align: center;
   padding: 30px 0;
 }
+
 /* Turn off parallax scrolling for tablets and phones */
 /* @media only screen and (max-width: 600px) { */
   /* .bgimg-1,
