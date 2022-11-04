@@ -203,77 +203,87 @@ list-inline {
 
 .bgimg-2 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie1.PNG?raw=true");
-  min-height: 700px;
+  min-height: 800px;
 }
 
 .bgimg-3 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie2.PNG?raw=true");
-  min-height: 900px;
+  min-height: 1100px;
 }
 
 .bgimg-4 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Indie3.PNG?raw=true");
-  min-height: 1100px;
+  min-height: 1300px;
 }
 
 .bgimg-5 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/vrjoris.PNG?raw=true");
-  min-height: 1300px;
+  min-height: 1500px;
 }
 
 .bgimg-6 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Magic.PNG?raw=true");
-  min-height: 1500px;
+  min-height: 1700px;
 }
 
 .bgimg-7 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Magic2.PNG?raw=true");
-  min-height: 1700px;
+  min-height: 1900px;
 }
 
 .bgimg-8 {
   background-color: black;
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Tournaments.png?raw=true");
-  min-height: 1900px;
+  min-height: 2100px;
   background-size: 100%
 
 }
 .bgimg-9 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
-  min-height: 2100px;
+  min-height: 2300px;
 }
 .bgimg-10 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Festivals.png?raw=true");
-  min-height: 2300px;
+  min-height: 2500px;
 }
 
 .bg-dark {
   color: #ddd;
-  background-color: #282e34;
-  text-align: center;
+  background-color: #000000;
+  margin-inline: 0 auto;
   padding: 20px 40px;
-  text-align: justify;
+  text-size-adjust: auto;
+  text-align: center;
+  position: relative;
+  min-width: 600px;
 }
 
-.bg-light {
-  color: #777;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 70px 100px;
-  text-align: justify;
-}
 .light-text {
   text-align: center;
   color: #0eebdc;
+  text-indent: 50px;
+  text-size-adjust: auto;
 }
+
+h2 {
+  padding: 70px 200px;
+  font: 50px 'Montserrat', sans-serif;
+  color: rgb(207, 243, 243);
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 70px 'Montserrat', sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+
 .border {
   font-size: 25px;
   color: #f7f7f7;
 }
-h3,
-p {
-  text-align: center;
-}
+
 
 .caption {
   position: absolute;
@@ -294,17 +304,11 @@ p {
   letter-spacing: 10px;
 }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 35px "slick", sans-serif;
-  color: #111;
-}
-
 .footer {
-  background: #333;
+  background: rgba(45, 44, 44, 0);
   color: #0eebdc;
   height: 40px;
+  font-size: 30px;
 }
 .center {
   text-align: center;
