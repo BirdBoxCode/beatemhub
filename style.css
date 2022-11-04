@@ -1,61 +1,181 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 body,
 html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "slick", sans-serif;
+  background-color: black;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
   color: #777;
 }
 
-/* STYLING OF HEADER */
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: left;
-  padding: 40px 400px;
-  z-index: 1000;
-  transition: 0.6s;
+h1 {
+  font-family: 'Kanit', sans-serif;
 }
 
-header ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header ul li {
-  list-style: none;
-}
-header ul li a {
-  font-family: 'slick', sans-serif;
-  margin: 0 15px;
+
+/********************** STYLING OF HEADER **********************/
+
+header a {
   text-decoration: none;
-  color: #a204ba;
-  letter-spacing: 2px;
-  font-weight: 500px;
-  padding: 15px 15px;
 }
-.active-btn,
-ul li a:hover {
-  background: rgb(0, 82, 71);
+
+header {
+  position: fixed;
+  background: black;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  z-index: 1000;
+  transition: 0.6s;
+  font-weight: bolder;
+  width: 100%;
+}
+
+/* navbar style */
+
+.beh-nav {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 00px 20px;
+}
+
+ul a {
+  color: white;
+  width: 100%;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
 }
 
 .sticky {
-  padding: 5px 100px;
-  background: rgb(15, 27, 29);
-  opacity: 0.7;
+  padding: 20px 00px;
+  background: black;
+  /* opacity: 0.7; */
   transition: 0.6s;
+  width: 100%;
 }
 
 .sticky ul li a {
-  color: #a204ba;
+  color: white;
   font-weight: bolder;
 }
 
-/* END OF HEADER */
+/* Mobile Nav */
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 20px;
+  transition: 0.6s;
+}
+
+.open .bar1 {
+-webkit-transform: rotate(-180deg) translate(-6px, 6px);
+transform: rotate(-180deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+-webkit-transform: rotate(180deg) translate(-6px, -8px);
+transform: rotate(180deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+/* set for pushing down content */
+max-height: 350px;
+}
+
+.mobile-menu {
+  display: none;
+  position: flex;
+  font-size: 40px;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 30px);
+  width: 100%;
+  background-color: black;
+}
+
+#body.push-down{
+  margin-top:250px;
+}
+
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+}
+
+/* social icons */
+
+#social-icons {
+padding-right: 50px;
+}
+
+.icons {
+  color: white;
+  font-size: 20px;
+}
+
+list-inline {
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: #B7C4CF;
+}
+.list-inline i:hover {
+  color: rgb(148, 8, 164);
+}
+
+/******************************** END OF HEADER ********************************/
+
+
 
 .bgimg-1,
 .bgimg-2,
@@ -77,87 +197,94 @@ ul li a:hover {
 }
 .bgimg-1 {
   background-color: black;
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/main/docs/Logo.jpg?raw=true");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.jpg?raw=true");
   min-height: 100%;
-  background-size: 65%
-
+  background-size: 60%;
+  position:relative;
 }
 
 .bgimg-2 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/indie1.png");
-  min-height: 700px;
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie1.PNG?raw=true");
+  min-height: 800px;
 }
 
 .bgimg-3 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/indie2.png");
-  min-height: 900px;
-}
-
-.bgimg-4 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/retro1.png");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie2.PNG?raw=true");
   min-height: 1100px;
 }
 
-.bgimg-5 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/vrjoris.png");
+.bgimg-4 {
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Indie3.PNG?raw=true");
   min-height: 1300px;
 }
 
-.bgimg-6 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/Magic.png");
+.bgimg-5 {
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/vrjoris.PNG?raw=true");
   min-height: 1500px;
 }
 
-.bgimg-7 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/Magic2.png");
+.bgimg-6 {
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Magic.PNG?raw=true");
   min-height: 1700px;
+}
+
+.bgimg-7 {
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Magic2.PNG?raw=true");
+  min-height: 1900px;
 }
 
 .bgimg-8 {
   background-color: black;
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/Tournaments.png");
-  min-height: 1900px;
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Tournaments.png?raw=true");
+  min-height: 2100px;
   background-size: 100%
 
 }
 .bgimg-9 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/Highscore.png");
-  min-height: 2100px;
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
+  min-height: 2300px;
 }
 .bgimg-10 {
-  background-image: url("file:///Users/aj-sath/code/ThiefinaboX/beatemhub/docs/Festivals.png");
-  min-height: 2300px;
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Festivals.png?raw=true");
+  min-height: 2500px;
 }
 
 .bg-dark {
   color: #ddd;
-  background-color: #282e34;
-  text-align: center;
+  background-color: #000000;
+  margin-inline: 0 auto;
   padding: 20px 40px;
-  text-align: justify;
+  text-size-adjust: auto;
+  text-align: center;
+  position: relative;
+  min-width: 600px;
 }
 
-.bg-light {
-  color: #777;
-  background-color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 70px 100px;
-  text-align: justify;
-}
 .light-text {
   text-align: center;
   color: #0eebdc;
+  text-indent: 50px;
+  text-size-adjust: auto;
 }
+
+h2 {
+  padding: 70px 200px;
+  font: 50px 'Montserrat', sans-serif;
+  color: rgb(207, 243, 243);
+}
+
+h3 {
+  text-transform: uppercase;
+  font: 70px 'Montserrat', sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+
 .border {
   font-size: 25px;
   color: #f7f7f7;
 }
-h3,
-p {
-  text-align: center;
-}
-
-
 
 .caption {
   position: absolute;
@@ -178,43 +305,42 @@ p {
   letter-spacing: 10px;
 }
 
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 35px "slick", sans-serif;
-  color: #111;
-}
 
 .footer {
-  background: #333;
+  background: rgba(45, 44, 44, 0);
   color: #0eebdc;
   height: 40px;
+  font-size: 30px;
 }
 .center {
   text-align: center;
   padding: 30px 0;
 }
-
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-width: 600px) {
-  .bgimg-1,
+/* @media only screen and (max-width: 600px) { */
+  /* .bgimg-1,
   .bgimg-2,
-  .bgimg-3 {
+  .bgimg-3
+  .bgimg-4
+  .bgimg-5
+  .bgimg-6
+  .bgimg-7
+  .bgimg-8
+  .bgimg-9
+  .bgimg-10 {
     background-attachment: scroll;
-  }
+  } */
 
-  header {
-    padding: 20px 0px;
-    margin: 0;
-  }
+  /* header nav {
+    display: none;
+  } */
 
-  header ul li a {
+  /* header ul li a {
     padding: 2px 1px;
     font-weight: none;
     font-size: 14px;
   }
   .sticky {
     padding: 2px 2px;
-    font-weight: none;
-  }
-}
+    font-weight: none; */
+  /* } */
