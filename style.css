@@ -8,16 +8,15 @@ body,
 html {
   height: 100%;
   margin: 0;
-  background-color: black;
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: #777;
+  background-color: black;
+  background-image: black;
+  min-height: 100%;
+  background-size: 60%;
+  position:relative;
 }
-
-h1 {
-  font-family: 'Kanit', sans-serif;
-}
-
 
 /********************** STYLING OF HEADER **********************/
 
@@ -157,7 +156,7 @@ padding-right: 50px;
   font-size: 20px;
 }
 
-list-inline {
+.list-inline {
   list-style: none;
 }
 
@@ -176,10 +175,13 @@ list-inline {
 
 /******************************** END OF HEADER ********************************/
 
-#con1 {
+#vid-wrapper {
   display:block;
   box-sizing: border-box;
+  height:auto;
 }
+
+/* *********Images************* */
 
 .bgimg-1,
 .bgimg-2,
@@ -192,13 +194,15 @@ list-inline {
 .bgimg-10,
 .bgimg-11,
 .bgimg-3 {
-  position: relative;
-  opacity: 1;
+  min-height: 100%;
+  height: 900px;
+  position:relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bgimg-1 {
   background-color: black;
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.jpg?raw=true");
@@ -209,95 +213,92 @@ list-inline {
 
 .bgimg-2 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie1.PNG?raw=true");
-  min-height: 800px;
 }
 
 .bgimg-3 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie2.PNG?raw=true");
-  min-height: 1100px;
 }
 
 .bgimg-4 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Indie3.PNG?raw=true");
-  min-height: 1300px;
 }
 
 .bgimg-5 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/vrjoris.PNG?raw=true");
-  min-height: 1500px;
 }
 
 .bgimg-6 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Magic.PNG?raw=true");
-  min-height: 1700px;
 }
 
 .bgimg-7 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Magic2.PNG?raw=true");
-  min-height: 1900px;
 }
 
 .bgimg-8 {
-  background-color: black;
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Tournaments.png?raw=true");
-  min-height: 2100px;
-  background-size: 100%
-
 }
 .bgimg-9 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
-  min-height: 2300px;
+
 }
 .bgimg-10 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Festivals.png?raw=true");
-  min-height: 2500px;
 }
 
-.bg-dark {
-  color: #ddd;
+/* *******TEXT********* */
+
+.text-con .text-wrapper {
+  display: block;
+  box-sizing: border-box;
+  justify-content: center;
   background-color: #000000;
   margin-inline: 0 auto;
-  padding: 20px 40px;
+  padding: 60px 40px;
   text-size-adjust: auto;
   text-align: center;
   position: relative;
   min-width: 600px;
 }
 
-.light-text {
-  text-align: center;
+h1 {
+  font: 70px 'Montserrat', sans-serif;
+  text-transform: uppercase;
   color: #0eebdc;
-  text-indent: 50px;
+  text-align: center;
   text-size-adjust: auto;
+  padding: 00px 40px;
 }
 
 h2 {
-  padding: 70px 200px;
-  font: 50px 'Montserrat', sans-serif;
-  color: rgb(207, 243, 243);
+  padding: 40px 200px;
+  font: 40px 'Montserrat', sans-serif;
+  color: #e678f4;
 }
 
 h3 {
-  text-transform: uppercase;
-  font: 70px 'Montserrat', sans-serif;
-  color: #111;
-  text-align: center;
+  padding: 40px 200px;
+  font: 50px 'Montserrat', sans-serif;
+  color: #0eebdc;
 }
 
+p {
+  padding: 20px 200px;
+  font: 40px 'Montserrat', sans-serif;
+  color: rgb(207, 243, 243);
+}
 
 .border {
   font-size: 25px;
   color: #f7f7f7;
 }
 
-
 .caption {
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 50%;
+  top: 40%;
   width: 100%;
   opacity: 0.5;
-
   text-align: center;
   color: #000;
 }
@@ -310,11 +311,15 @@ h3 {
   letter-spacing: 10px;
 }
 
+**********footer**********
+
+
 .footer {
   background: rgba(45, 44, 44, 0);
   color: #0eebdc;
+  font-style: italic;
   height: 40px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .center {
   text-align: center;
