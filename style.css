@@ -12,7 +12,6 @@ html {
   font-weight: 300;
   color: white;
   background-color: black;
-  background-image: black;
   min-height: 100%;
   background-size: 60%;
   position:relative;
@@ -322,7 +321,17 @@ p {
   justify-content: center;
   align-items:center;
   font-weight: lighter;
-  padding-top: 30%;
+  padding-top: 20%;
+}
+
+a{
+  color: #0eebdc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e678f4;
+  transition: 0.5s;
 }
 
 .footer {
