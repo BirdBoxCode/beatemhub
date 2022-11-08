@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+html, body {
   height: 100%;
-  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: white;
@@ -15,6 +15,12 @@ html {
   min-height: 100%;
   background-size: 60%;
   position:relative;
+}
+
+.boxed-wrapper {
+  overflow: hidden;
+  display: block;
+  width: 100%;
 }
 
 /********************** STYLING OF HEADER **********************/
@@ -126,7 +132,7 @@ max-height: 350px;
   top: 50px;
   left: 0;
   height: calc(100vh - 30px);
-  width: 100%;s
+  width: 100%;
   background-color: black;
 }
 
@@ -177,6 +183,7 @@ padding-right: 0px;
   position: relative;
   display: block;
   box-sizing: border-box;
+  width: 100%;
 }
 
 #vid-wrapper {
