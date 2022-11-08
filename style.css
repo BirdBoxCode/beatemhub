@@ -173,6 +173,11 @@ padding-right: 0px;
 }
 
 /******************************** END OF HEADER ********************************/
+.container {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+}
 
 #vid-wrapper {
   display:block;
