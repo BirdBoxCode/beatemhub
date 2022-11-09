@@ -176,14 +176,14 @@ padding-right: 20px;
 /******************************** END OF HEADER ********************************/
 .container {
   position: relative;
-  display: block;
-  box-sizing: border-box;
+  display: contents;
+  box-sizing: content-box;
   width: 100%;
 }
 
 #vid-wrapper {
   display:block;
-  box-sizing: content-box;
+  box-sizing: border-box;
   height:auto;
   padding-top: 30px;
 }
