@@ -207,9 +207,7 @@ padding-right: 20px;
 
 .bgimg-1 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.jpg?raw=true");
-  min-height: 100%;
   background-size: 60%;
-  position:relative;
 }
 
 .bgimg-2 {
