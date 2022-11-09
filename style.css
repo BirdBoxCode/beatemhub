@@ -390,7 +390,7 @@ a:hover {
 
     }}
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .bgimg-1,
   .bgimg-2,
   .bgimg-3
@@ -403,5 +403,10 @@ a:hover {
   .bgimg-10 {
     background-position: center top !important;
 
-
   }}
+
+  @media only screen and (min-width: 430px) {
+    p {
+      font-size: 2rem;
+    }
+  }
