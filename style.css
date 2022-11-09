@@ -381,7 +381,21 @@ a:hover {
 
     @media only screen and (max-width: 600px) {
       .bgimg-1 {
-        background-size: 50px 50px;
+        background-size: 80%;
+      }
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6,
+      .bgimg-7,
+      .bgimg-8,
+      .bgimg-9,
+      .bgimg-10,
+      .bgimg-11,
+      .bgimg-3 {
+        background-size: 80%;
       }
 
     }
