@@ -31,7 +31,7 @@ header a {
 
 header {
   position: fixed;
-  background: black;
+  background: transparent;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -77,13 +77,18 @@ ul li:hover {
   padding: 20px 00px;
   background: black;
   /* opacity: 0.7; */
-  transition: 0.6s;
+  transition: 0.3s;
   width: 100%;
 }
 
 .sticky ul li a {
   color: white;
   font-weight: bolder;
+}
+
+.sticky ul li a:hover {
+  color: #e678f4;
+  transition: 0.5s;
 }
 
 /* Mobile Nav */
@@ -153,12 +158,12 @@ max-height: 350px;
 /* social icons */
 
 #social-icons {
-padding-right: 0px;
+padding-right: 40px;
 }
 
 .icons {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .list-inline {
@@ -188,8 +193,9 @@ padding-right: 0px;
 
 #vid-wrapper {
   display:block;
-  box-sizing: border-box;
+  box-sizing: content-box;
   height:auto;
+  padding-top: 30px;
 }
 
 /* *********Images************* */
