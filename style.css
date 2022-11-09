@@ -8,7 +8,6 @@
   overflow: hidden;
   overflow-x: hidden;
   display: block;
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -20,7 +19,7 @@ html, body {
   color: white;
   background-color: black;
   min-height: 100%;
-  position:relative;
+  /* position:relative; */
 }
 
 /********************** STYLING OF HEADER **********************/
