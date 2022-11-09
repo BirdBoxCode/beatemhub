@@ -206,7 +206,6 @@ padding-right: 20px;
 }
 
 .bgimg-1 {
-  background-color: black;
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.jpg?raw=true");
   min-height: 100%;
   background-size: 60%;
@@ -238,10 +237,10 @@ padding-right: 20px;
 }
 
 .bgimg-8 {
-  background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Tournaments.png?raw=true");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Tournaments.png?raw=true");
 }
 .bgimg-9 {
-  background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
 
 }
 .bgimg-10 {
@@ -315,7 +314,7 @@ p {
   color: white;
 }
 
-**********footer**********
+/* **********footer********** */
 
 #email-contact {
   display: flex;
@@ -359,7 +358,6 @@ a:hover {
 }
 
 /* Media Queries */
-
 
     @media only screen and (max-width: 699px) {
       #vid-wrapper {
