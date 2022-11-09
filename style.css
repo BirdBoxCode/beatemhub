@@ -398,6 +398,7 @@ a:hover {
     }}
 
 @media only screen and (max-width: 600px) {
+  .bgimg-1
   .bgimg-2
   .bgimg-3
   .bgimg-4
@@ -407,9 +408,11 @@ a:hover {
   .bgimg-8
   .bgimg-9
   .bgimg-10 {
-    background-position: center top !important;
+    /* background-position: center top !important;
     max-width: 380px;
-    max-height: 380px; }
+    max-height: 380px; } */
+
+  }
 
   #vid-wrapper {
     display: none;
