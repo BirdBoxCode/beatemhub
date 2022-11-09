@@ -158,12 +158,12 @@ max-height: 350px;
 /* social icons */
 
 #social-icons {
-padding-right: 40px;
+padding-right: 20px;
 }
 
 .icons {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .list-inline {
