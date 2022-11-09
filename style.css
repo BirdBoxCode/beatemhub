@@ -145,16 +145,6 @@ max-height: 350px;
   margin-top:250px;
 }
 
-@media only screen and (max-width: 600px) {
-  header nav {
-    display: none;
-  }
-
-  #hamburger-icon {
-    display: block;
-  }
-}
-
 /* social icons */
 
 #social-icons {
@@ -189,7 +179,6 @@ padding-right: 20px;
   display: block;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: -40px;
 }
 
 #vid-wrapper {
@@ -380,3 +369,13 @@ a:hover {
     /* background-position: center top !important;
     max-width: 380px;
     max-height: 380px; } */
+
+    @media only screen and (max-width: 600px) {
+      header nav {
+        display: none;
+      }
+
+      #hamburger-icon {
+        display: block;
+      }
+    }
