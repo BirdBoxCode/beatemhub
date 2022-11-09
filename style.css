@@ -180,12 +180,6 @@ padding-right: 20px;
 }
 
 /******************************** END OF HEADER ********************************/
-.container {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
 #vid-wrapper {
   display:block;
   box-sizing: border-box;
@@ -194,6 +188,12 @@ padding-right: 20px;
 }
 
 /* *********Images************* */
+.img-box {
+
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
 
 .bgimg-1,
 .bgimg-2,
@@ -216,7 +216,7 @@ padding-right: 20px;
 
 .bgimg-1 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.jpg?raw=true");
-  background-size: 60%;
+  background-size: 50%;
 }
 
 .bgimg-2 {
@@ -255,15 +255,19 @@ padding-right: 20px;
 }
 
 /* *******TEXT********* */
+.container {
+  display: block;
+  box-sizing:border-box;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 20px 120px;
+}
 
 .text-wrapper {
   display: block;
   box-sizing: border-box;
-  /* justify-content: center; */
   background-color: #000000;
-  /* margin-inline: 0 auto; */
-  padding: 60px 40px;
-  /* text-size-adjust: auto; */
   text-align: center;
   position: relative;
   min-width: 600px;
@@ -273,8 +277,7 @@ padding-right: 20px;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+
 }
 
 h1 {
@@ -300,7 +303,7 @@ h3 {
 }
 
 p {
-  padding: 20px 200px;
+  margin: 00px 20px;
   font: 40px 'Montserrat', sans-serif;
 
 }
@@ -368,7 +371,9 @@ a:hover {
 
  /* Medium Devices, Desktops */
  @media only screen and (min-width : 992px) {
-
+  .container {
+    font-size: 1em;
+  }
 }
 
   /* Small Devices, Tablets */
@@ -376,11 +381,27 @@ a:hover {
 
   }
 
+  @media only screen and (max-width : 768px) {
+    #vid-wrapper {
+      display: none;
+          }}
 
    /* Extra Small Devices, Phones */
-   @media only screen and (min-width : 480px) {
-
-  }
+  @media only screen and (max-width : 480px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7,
+    .bgimg-8,
+    .bgimg-9,
+    .bgimg-10,
+    .bgimg-11,
+    .bgimg-3 {
+  background-size: cover !important;
+  background-position: center !important;
+  }}
 
   /* Custom, iPhone Retina */
   @media only screen and (min-width : 320px) {
