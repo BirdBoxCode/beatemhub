@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+.boxed-wrapper {
+  overflow: hidden;
+  overflow-x: hidden;
+  display: block;
+  width: 100%;
+}
+
 html, body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: white;
@@ -15,12 +21,6 @@ html, body {
   min-height: 100%;
   background-size: 60%;
   position:relative;
-}
-
-.boxed-wrapper {
-  overflow: hidden;
-  display: block;
-  width: 100%;
 }
 
 /********************** STYLING OF HEADER **********************/
@@ -259,17 +259,25 @@ padding-right: 0px;
 
 /* *******TEXT********* */
 
-.text-con .text-wrapper {
+.text-wrapper {
   display: block;
   box-sizing: border-box;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: #000000;
-  margin-inline: 0 auto;
+  /* margin-inline: 0 auto; */
   padding: 60px 40px;
-  text-size-adjust: auto;
+  /* text-size-adjust: auto; */
   text-align: center;
   position: relative;
   min-width: 600px;
+}
+
+.text-wrapper p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 h1 {
