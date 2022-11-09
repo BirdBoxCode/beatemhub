@@ -9,7 +9,6 @@
   overflow-x: hidden;
   display: block;
   width: 100%;
-  background-color:black;
 }
 
 html, body {
@@ -18,9 +17,8 @@ html, body {
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: white;
-  background-color: transparent;
+  background-color: black;
   min-height: 100%;
-  background-size: 60%;
   position:relative;
 }
 
@@ -142,10 +140,6 @@ max-height: 350px;
   background-color: black;
 }
 
-#body.push-down{
-  margin-top:250px;
-}
-
 /* social icons */
 
 #social-icons {
@@ -175,12 +169,12 @@ padding-right: 20px;
 }
 
 /******************************** END OF HEADER ********************************/
-.container {
+/* .container {
   position: relative;
   display: block;
   box-sizing: border-box;
   width: 100%;
-}
+} */
 
 #vid-wrapper {
   display:block;
