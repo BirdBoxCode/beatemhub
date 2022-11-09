@@ -9,6 +9,7 @@
   overflow-x: hidden;
   display: block;
   width: 100%;
+  background-color:black;
 }
 
 html, body {
@@ -17,7 +18,7 @@ html, body {
   font-family: 'Kanit', sans-serif;
   font-weight: 300;
   color: white;
-  background-color: black;
+  background-color: transparent;
   min-height: 100%;
   background-size: 60%;
   position:relative;
@@ -176,8 +177,8 @@ padding-right: 20px;
 /******************************** END OF HEADER ********************************/
 .container {
   position: relative;
-  display: contents;
-  box-sizing: content-box;
+  display: block;
+  box-sizing: border-box;
   width: 100%;
 }
 
