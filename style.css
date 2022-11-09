@@ -410,11 +410,21 @@ a:hover {
   .bgimg-10 {
     background-position: center top !important;
     max-width: 380px;
-    max-height: 380px;
-  }}
+    max-height: 380px; }
 
-  @media only screen and (min-width: 430px) {
+  #vid-wrapper {
+    display: none;
+    }
+  }
+
+
+  @media only screen and (max-width: 430px) {
     p {
       font-size: 2rem;
     }
+
+    #vid-wrapper {
+      display: none;
+    }
+
   }
