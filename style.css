@@ -8,6 +8,7 @@
   overflow: hidden;
   overflow-x: hidden;
   display: block;
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -169,12 +170,12 @@ padding-right: 20px;
 }
 
 /******************************** END OF HEADER ********************************/
-/* .container {
+.container {
   position: relative;
   display: block;
   box-sizing: border-box;
   width: 100%;
-} */
+}
 
 #vid-wrapper {
   display:block;
