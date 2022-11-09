@@ -376,57 +376,7 @@ a:hover {
 
 /* Turn off parallax scrolling for tablets and phones */
 
-@media (min-width:1200px) {
 
-  }
-
-
-@media screen and (min-width: 700px) {
-
-  p.text {
-  font-size: 25px;
-  }}
-
-
-  @media only screen and (max-width: 699px) {
-    #vid-wrapper {
-      display: none;
-    }
-
-    p.text {
-    font-size: 16px;
-    }}
-
-@media only screen and (max-width: 600px) {
-  .bgimg-1
-  .bgimg-2
-  .bgimg-3
-  .bgimg-4
-  .bgimg-5
-  .bgimg-6
-  .bgimg-7
-  .bgimg-8
-  .bgimg-9
-  .bgimg-10 {
     /* background-position: center top !important;
     max-width: 380px;
     max-height: 380px; } */
-
-  }
-
-  #vid-wrapper {
-    display: none;
-    }
-  }
-
-
-  @media only screen and (max-width: 430px) {
-    p {
-      font-size: 2rem;
-    }
-
-    #vid-wrapper {
-      display: none;
-    }
-
-  }
