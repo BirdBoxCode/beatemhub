@@ -18,7 +18,10 @@ body {
   background-color: black;
   min-height: 100%;
   overflow-x: hidden;
-  /* position:relative; */
+}
+
+div {
+  display: block;
 }
 
 /********************** STYLING OF HEADER **********************/
@@ -255,12 +258,9 @@ padding-right: 20px;
 
 /* *******TEXT********* */
 .container {
-  display: block;
-  box-sizing:border-box;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding: 20px 120px;
+  background-color: rgba(255,255,255,0);
+  margin: auto;
+  padding: auto;
 }
 
 .text-wrapper {
@@ -272,12 +272,12 @@ padding-right: 20px;
   min-width: 600px;
 }
 
-.text-wrapper p {
+/* .text-wrapper p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
 
-}
+} */
 
 h1 {
   font: 70px 'Montserrat', sans-serif;
@@ -369,24 +369,39 @@ a:hover {
 /* Media Queries */
 
  /* Medium Devices, Desktops */
- @media only screen and (min-width : 992px) {
-  .container {
-    font-size: 1em;
+ @media screen and (max-width : 992px) {
+  h1 {
+    font-size: 50px;
   }
-}
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .text-wrapper p {
+    font-size: 20px;
+    }}
 
   /* Small Devices, Tablets */
   @media only screen and (min-width : 768px) {
 
   }
 
-  @media only screen and (max-width : 768px) {
-    #vid-wrapper {
-      display: none;
-          }}
-
    /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px) {
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .text-wrapper p {
+      font-size: 10px;
+      }
+
     .bgimg-1,
     .bgimg-2,
     .bgimg-4,
@@ -398,11 +413,21 @@ a:hover {
     .bgimg-10,
     .bgimg-11,
     .bgimg-3 {
-  background-size: cover !important;
+  background-size: auto !important;
   background-position: center !important;
   }}
 
   /* Custom, iPhone Retina */
-  @media only screen and (min-width : 320px) {
+  @media only screen and (max-width : 320px) {
+    h1 {
+      font-size: 30px;
+    }
 
+    h2 {
+      font-size: 10px;
+    }
+
+    .text-wrapper p {
+      font-size: 10px;
+      }
   }
