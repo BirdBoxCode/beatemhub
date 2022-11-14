@@ -298,9 +298,10 @@ h2 {
 }
 
 h3 {
-  padding: 40px 80px;
+  padding: 40px 00px;
   font: 50px 'Montserrat', sans-serif;
   color: #0eebdc;
+  margin: auto;
 }
 
 p {
@@ -313,7 +314,7 @@ p {
   margin: auto;
   letter-spacing: 8px;
   font: 'Montserrat', sans-serif;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: lighter;
   text-transform: uppercase;
   position: relative;
@@ -414,7 +415,7 @@ a:hover {
     font-size: 30px;
     }
 
-  .bgimg-1,
+  /* .bgimg-1,
   .bgimg-2,
   .bgimg-4,
   .bgimg-5,
@@ -427,15 +428,14 @@ a:hover {
   .bgimg-3 {
 /* background-size: auto !important; */
 background-position: center !important;
-}
+} */
 
 #vid-wrapper {
   display: none;
 }
 
 .caption {
-  font-size: 50px;
-}
+  font-size: 40px;
 }
 
   /* Small Devices, Tablets */
@@ -457,7 +457,7 @@ background-position: center !important;
       }
 
       .caption {
-        font-size: 100px;
+        font-size: 80px;
       }
 
   }
@@ -483,7 +483,7 @@ background-position: center !important;
     }
 
     .caption {
-      font-size: 100px;
+      font-size: 80px;
     }
 
   }
