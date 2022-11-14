@@ -260,7 +260,9 @@ padding-right: 20px;
 .container {
   background-color: rgba(255,255,255,0);
   margin: auto;
+  width: auto;
   padding: auto;
+
 }
 
 .text-wrapper {
@@ -269,7 +271,7 @@ padding-right: 20px;
   background-color: #000000;
   text-align: center;
   position: relative;
-  min-width: 600px;
+  margin: 60px;
 }
 
 /* .text-wrapper p {
@@ -289,14 +291,14 @@ h1 {
 }
 
 h2 {
-  padding: 40px 200px;
+  padding: 40px 80px;
   font: 40px 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
 }
 
 h3 {
-  padding: 40px 200px;
+  padding: 40px 80px;
   font: 50px 'Montserrat', sans-serif;
   color: #0eebdc;
 }
@@ -368,66 +370,93 @@ a:hover {
 
 /* Media Queries */
 
- /* Medium Devices, Desktops */
- @media screen and (max-width : 992px) {
+ /* Custom, iPhone Retina */
+ @media screen and (min-width : 320px) {
   h1 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 10px;
+  }
+
+  .text-wrapper p {
+    font-size: 10px;
+    }
+
+  .email {
+    font-size: 20px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media screen and (min-width : 480px) {
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 20px;
   }
 
   .text-wrapper p {
     font-size: 20px;
-    }}
+    }
+
+    .email {
+      font-size: 30px;
+      }
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8,
+  .bgimg-9,
+  .bgimg-10,
+  .bgimg-11,
+  .bgimg-3 {
+/* background-size: auto !important; */
+background-position: center !important;
+}}
 
   /* Small Devices, Tablets */
-  @media only screen and (min-width : 768px) {
-
-  }
-
-   /* Extra Small Devices, Phones */
-  @media only screen and (max-width : 480px) {
-
+  @media screen and (min-width : 768px) {
     h1 {
-      font-size: 40px;
+      font-size: 50px;
     }
 
     h2 {
-      font-size: 20px;
-    }
-
-    .text-wrapper p {
-      font-size: 10px;
-      }
-
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-4,
-    .bgimg-5,
-    .bgimg-6,
-    .bgimg-7,
-    .bgimg-8,
-    .bgimg-9,
-    .bgimg-10,
-    .bgimg-11,
-    .bgimg-3 {
-  background-size: auto !important;
-  background-position: center !important;
-  }}
-
-  /* Custom, iPhone Retina */
-  @media only screen and (max-width : 320px) {
-    h1 {
       font-size: 30px;
     }
 
-    h2 {
-      font-size: 10px;
-    }
-
     .text-wrapper p {
-      font-size: 10px;
+      font-size: 30px;
       }
   }
+
+  .email {
+    font-size: 40px;
+    }
+
+ /* Medium Devices, Desktops */
+ @media screen and (min-width : 992px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .text-wrapper p {
+    font-size: 40px;
+    }}
+
+    .email {
+      font-size: 40px;
+      }
