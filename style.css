@@ -382,12 +382,17 @@ a:hover {
   }
 
   .text-wrapper p {
-    font-size: 10px;
+    font-size: 20px;
     }
 
   #vid-wrapper {
     display: none;
   }
+
+  .caption {
+    font-size: 50px;
+  }
+
 }
 
 /* Extra Small Devices, Phones */
@@ -426,7 +431,12 @@ background-position: center !important;
 
 #vid-wrapper {
   display: none;
-}}
+}
+
+.caption {
+  font-size: 50px;
+}
+}
 
   /* Small Devices, Tablets */
   @media screen and (min-width : 768px) {
@@ -444,6 +454,10 @@ background-position: center !important;
 
       #vid-wrapper {
         display: block;
+      }
+
+      .caption {
+        font-size: 100px;
       }
 
   }
@@ -466,6 +480,10 @@ background-position: center !important;
 
     #vid-wrapper {
       display: block;
+    }
+
+    .caption {
+      font-size: 100px;
     }
 
   }
