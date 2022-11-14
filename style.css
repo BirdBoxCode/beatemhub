@@ -183,7 +183,7 @@ padding-right: 20px;
 
 /******************************** END OF HEADER ********************************/
 #vid-wrapper {
-  display:block;
+  display: none;
   box-sizing: border-box;
   height:auto;
   padding-top: 30px;
@@ -374,7 +374,7 @@ a:hover {
  /* Custom, iPhone Retina */
  @media screen and (min-width : 320px) {
   h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   h2 {
@@ -385,6 +385,9 @@ a:hover {
     font-size: 10px;
     }
 
+  #vid-wrapper {
+    display: none;
+  }
 }
 
 /* Extra Small Devices, Phones */
@@ -419,6 +422,10 @@ a:hover {
   .bgimg-3 {
 /* background-size: auto !important; */
 background-position: center !important;
+}
+
+#vid-wrapper {
+  display: none;
 }}
 
   /* Small Devices, Tablets */
@@ -432,20 +439,33 @@ background-position: center !important;
     }
 
     .text-wrapper p {
-      font-size: 30px;
+      font-size: 40px;
       }
+
+      #vid-wrapper {
+        display: block;
+      }
+
   }
 
  /* Medium Devices, Desktops */
  @media screen and (min-width : 992px) {
+
+
   h1 {
-    font-size: 70px;
+    font-size: 50px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .text-wrapper p {
     font-size: 40px;
-    }}
+    }
+
+    #vid-wrapper {
+      display: block;
+    }
+
+  }
