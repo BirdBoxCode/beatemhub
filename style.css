@@ -190,12 +190,6 @@ padding-right: 20px;
 }
 
 /* *********Images************* */
-.img-box {
-
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
 
 .bgimg-1,
 .bgimg-2,
@@ -216,9 +210,19 @@ padding-right: 20px;
   background-size: cover;
 }
 
+/* .img-box {
+  display: block;
+  align-items: center;
+  background-attachment: fixed;
+  height: 800px;
+  background: transparent;
+} */
+
 .bgimg-1 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.jpg?raw=true");
   background-size: 50%;
+  height: 800px;
+  background-attachment: fixed;
 }
 
 .bgimg-2 {
@@ -262,7 +266,6 @@ padding-right: 20px;
   margin: auto;
   width: auto;
   padding: auto;
-
 }
 
 .text-wrapper {
@@ -271,7 +274,8 @@ padding-right: 20px;
   background-color: #000000;
   text-align: center;
   position: relative;
-  margin: 60px;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 /* .text-wrapper p {
@@ -375,41 +379,57 @@ a:hover {
  /* Custom, iPhone Retina */
  @media screen and (min-width : 320px) {
   h1 {
-    font-size: 40px;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 
   .text-wrapper p {
     font-size: 20px;
     }
+
+  .text-wrapper {
+    padding: 0px;
+  }
 
   #vid-wrapper {
     display: none;
   }
 
   .caption {
-    font-size: 50px;
+    font-size: 30px;
   }
-
 }
 
 /* Extra Small Devices, Phones */
 @media screen and (min-width : 480px) {
 
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
-  .text-wrapper p {
-    font-size: 20px;
-    }
+  h3 {
+    font-size: 30px;
+  }
+
+.text-wrapper p {
+  font-size: 20px;
+  }
+
+  .text-wrapper {
+    padding-left:  50px;
+    padding-right: 50px;
+  }
 
   .email {
     font-size: 30px;
@@ -427,7 +447,7 @@ a:hover {
   .bgimg-11,
   .bgimg-3 {
 /* background-size: auto !important; */
-background-position: center !important;
+/* background-position: center !important;
 } */
 
 #vid-wrapper {
@@ -436,6 +456,8 @@ background-position: center !important;
 
 .caption {
   font-size: 40px;
+}
+
 }
 
   /* Small Devices, Tablets */
@@ -448,9 +470,18 @@ background-position: center !important;
       font-size: 40px;
     }
 
+    h3 {
+      font-size: 50px;
+    }
+
     .text-wrapper p {
       font-size: 40px;
       }
+
+    .text-wrapper {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
 
       #vid-wrapper {
         display: block;
@@ -471,11 +502,20 @@ background-position: center !important;
   }
 
   h2 {
+    font-size: 40px;
+  }
+
+  h3 {
     font-size: 50px;
   }
 
   .text-wrapper p {
     font-size: 40px;
+    }
+
+    .text-wrapper {
+      padding-left: 200px;
+      padding-right: 200px;
     }
 
     #vid-wrapper {
