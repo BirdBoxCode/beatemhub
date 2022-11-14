@@ -344,6 +344,7 @@ p {
   align-items:center;
   font-weight: lighter;
   padding-top: 12%;
+  margin: 0px 40px;
 }
 
 a{
@@ -377,15 +378,11 @@ a:hover {
   }
 
   h2 {
-    font-size: 10px;
+    font-size: 30px;
   }
 
   .text-wrapper p {
     font-size: 10px;
-    }
-
-  .email {
-    font-size: 20px;
     }
 
 }
@@ -398,16 +395,16 @@ a:hover {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   .text-wrapper p {
     font-size: 20px;
     }
 
-    .email {
-      font-size: 30px;
-      }
+  .email {
+    font-size: 30px;
+    }
 
   .bgimg-1,
   .bgimg-2,
@@ -431,17 +428,13 @@ background-position: center !important;
     }
 
     h2 {
-      font-size: 30px;
+      font-size: 40px;
     }
 
     .text-wrapper p {
       font-size: 30px;
       }
   }
-
-  .email {
-    font-size: 40px;
-    }
 
  /* Medium Devices, Desktops */
  @media screen and (min-width : 992px) {
@@ -456,7 +449,3 @@ background-position: center !important;
   .text-wrapper p {
     font-size: 40px;
     }}
-
-    .email {
-      font-size: 40px;
-      }
