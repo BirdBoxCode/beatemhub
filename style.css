@@ -191,7 +191,13 @@ padding-right: 20px;
 
 /* *********Images************* */
 
-.bgimg-1,
+.bgimg-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  align-items: center;
+  background-attachment: fixed;
+}
 .bgimg-2,
 .bgimg-4,
 .bgimg-5,
@@ -222,7 +228,7 @@ padding-right: 20px;
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.png?raw=true");
   background-size: 50%;
   height: 800px;
-  background-attachment: fixed;
+
 }
 
 .bgimg-2 {
