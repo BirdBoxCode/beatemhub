@@ -445,6 +445,10 @@ a:hover {
     font-size: 30px;
     }
 
+    .bgimg-1 {
+      background-size: 300px;
+    }
+
     .bgimg-1,
     .bgimg-2,
     .bgimg-4,
@@ -457,7 +461,7 @@ a:hover {
     .bgimg-11,
     .bgimg-3 {
       background-attachment: scroll !important;
-      background-size: cover;
+      background-size: 400px;
   }
 
   #vid-wrapper {
@@ -499,6 +503,10 @@ a:hover {
     font-size: 30px;
   }
 
+  .bgimg-1 {
+    background-size: 300px;
+  }
+
   .bgimg-1,
   .bgimg-2,
   .bgimg-4,
@@ -510,6 +518,7 @@ a:hover {
   .bgimg-10,
   .bgimg-11,
   .bgimg-3 {
-  background-attachment: scroll !important;
-  }
+    background-attachment: scroll !important;
+    background-size: 400px;
+}
 }
