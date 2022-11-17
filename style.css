@@ -20,6 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+div {
+  display: block;
+}
+
 /********************** STYLING OF HEADER **********************/
 
 header a {
@@ -174,12 +178,14 @@ padding-right: 20px;
   #hamburger-icon {
     display: block;
   }
+
 }
 
 /******************************** END OF HEADER ********************************/
 #vid-wrapper {
   display: none;
   box-sizing: border-box;
+  height:auto;
   padding-top: 30px;
 }
 
@@ -188,10 +194,10 @@ padding-right: 20px;
 .bgimg-1 {
   background-position: center;
   background-repeat: no-repeat;
-  display: block;
   align-items: center;
   background-attachment: fixed;
 }
+
 .bgimg-2,
 .bgimg-4,
 .bgimg-5,
@@ -220,7 +226,7 @@ padding-right: 20px;
 
 .bgimg-1 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.png?raw=true");
-  background-size: 50%;
+  background-size: 700px;
   height: 800px;
 }
 
@@ -377,33 +383,50 @@ a:hover {
 
  /* Custom, iPhone Retina */
  @media screen and (min-width : 320px) {
-    h1 {
-      font-size: 20px;
-    }
+  h1 {
+    font-size: 20px;
+  }
 
-    h2 {
-      font-size: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 
-    h3 {
-      font-size: 20px;
-    }
+  h3 {
+    font-size: 20px;
+  }
 
   .text-wrapper p {
     font-size: 20px;
     }
 
-    .text-wrapper {
-      padding: 0px;
-    }
+  .text-wrapper {
+    padding: 0px;
+  }
 
-    #vid-wrapper {
-      display: none;
-    }
+  #vid-wrapper {
+    display: none;
+  }
 
-    .caption {
-      font-size: 30px;
-    }
+  .caption {
+    font-size: 30px;
+  }
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8,
+  .bgimg-9,
+  .bgimg-10,
+  .bgimg-11,
+  .bgimg-3 {
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: scroll;
+}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -421,9 +444,9 @@ a:hover {
     font-size: 30px;
   }
 
-  .text-wrapper p {
-    font-size: 20px;
-    }
+.text-wrapper p {
+  font-size: 20px;
+  }
 
   .text-wrapper {
     padding-left:  50px;
@@ -434,32 +457,33 @@ a:hover {
     font-size: 30px;
     }
 
-  img.bgimg-1,
-  img.bgimg-2,
-  img.bgimg-4,
-  img.bgimg-5,
-  img.bgimg-6,
-  img.bgimg-7,
-  img.bgimg-8,
-  img.bgimg-9,
-  img.bgimg-10,
-  img.bgimg-11,
-  img.bgimg-3 {
-  width: 300px;
-  /* background-size: auto !important;
-  background-position: center !important; */
+#vid-wrapper {
+  display: none;
 }
 
-  #vid-wrapper {
-    display: none;
-  }
-
-  .caption {
-    font-size: 40px;
-  }
+.caption {
+  font-size: 40px;
 }
 
-  /* Small Devices, Tablets  */
+.bgimg-1,
+.bgimg-2,
+.bgimg-4,
+.bgimg-5,
+.bgimg-6,
+.bgimg-7,
+.bgimg-8,
+.bgimg-9,
+.bgimg-10,
+.bgimg-11,
+.bgimg-3 {
+background-size: cover !important;
+background-position: center !important;
+background-attachment: scroll;
+}
+
+}
+
+  /* Small Devices, Tablets */
   @media screen and (min-width : 768px) {
     h1 {
       font-size: 50px;
@@ -490,22 +514,50 @@ a:hover {
         font-size: 80px;
       }
 
+      .bgimg-1 {
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        background-attachment: fixed;
+        background-size: 700px;
+        height: 800px;
+      }
+
+      .bgimg-2,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6,
+      .bgimg-7,
+      .bgimg-8,
+      .bgimg-9,
+      .bgimg-10,
+      .bgimg-11,
+      .bgimg-3 {
+        height: 900px;
+        position:relative;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
   }
 
  /* Medium Devices, Desktops */
 @media screen and (min-width : 992px) {
 
-    h1 {
-      font-size: 50px;
-    }
 
-    h2 {
-      font-size: 40px;
-    }
+  h1 {
+    font-size: 50px;
+  }
 
-    h3 {
-      font-size: 50px;
-    }
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
 
   .text-wrapper p {
     font-size: 40px;
@@ -522,6 +574,33 @@ a:hover {
 
     .caption {
       font-size: 80px;
+    }
+
+    .bgimg-1 {
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      background-attachment: fixed;
+      background-size: 700px;
+      height: 800px;
+    }
+
+    .bgimg-2,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7,
+    .bgimg-8,
+    .bgimg-9,
+    .bgimg-10,
+    .bgimg-11,
+    .bgimg-3 {
+      height: 900px;
+      position:relative;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
   }
