@@ -419,6 +419,8 @@ a:hover {
 
   h2 {
     font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   h3 {
@@ -440,6 +442,7 @@ a:hover {
 
     .bgimg-1 {
       background-size: 300px;
+      height: 700px;
       background-attachment: scroll !important;
     }
 
@@ -499,6 +502,7 @@ a:hover {
 
   .bgimg-1 {
     background-size: 300px;
+    height: 700px;
   }
 
   .bgimg-1
