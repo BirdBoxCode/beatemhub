@@ -410,6 +410,10 @@ a:hover {
   .caption {
     font-size: 30px;
   }
+  @media only screen and (min-width: 320px) and (max-width: 989px) {
+    .parallax {
+    background-attachment: scroll !important;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -501,7 +505,6 @@ a:hover {
  /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-
   h1 {
     font-size: 50px;
   }
@@ -531,10 +534,4 @@ a:hover {
       font-size: 80px;
     }
 
-  }
-
-  @media only screen and (min-width: 320px) and (max-width: 989px) {
-    .parallax {
-    background-attachment: scroll !important;
-    }
   }
