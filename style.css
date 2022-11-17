@@ -225,7 +225,7 @@ padding-right: 20px;
 
 .bgimg-1 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.png?raw=true");
-  background-size: 700px;
+  background-size: 50%;
   height: 800px;
 }
 
@@ -409,7 +409,7 @@ a:hover {
       }
 
         #vid-wrapper {
-          display: block;
+          display: none;
         }
 
         .caption {
@@ -457,6 +457,7 @@ a:hover {
     .bgimg-11,
     .bgimg-3 {
       background-attachment: scroll !important;
+      background-size: cover;
   }
 
   #vid-wrapper {
@@ -469,7 +470,7 @@ a:hover {
 }
 
  /* Custom, iPhone Retina */
- @media only screen and (max-width : 320px) {
+@media only screen and (max-width : 320px) {
   h1 {
     font-size: 20px;
   }
