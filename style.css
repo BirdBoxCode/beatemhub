@@ -194,10 +194,10 @@ padding-right: 20px;
 .bgimg-1 {
   background-position: center;
   background-repeat: no-repeat;
+  display: block;
   align-items: center;
   background-attachment: fixed;
 }
-
 .bgimg-2,
 .bgimg-4,
 .bgimg-5,
@@ -382,7 +382,7 @@ a:hover {
 /* Media Queries */
 
  /* Custom, iPhone Retina */
- @media screen and (min-width : 320px) {
+ @media only screen and (min-width : 320px) {
   h1 {
     font-size: 20px;
   }
@@ -410,27 +410,10 @@ a:hover {
   .caption {
     font-size: 30px;
   }
-
-  .bgimg-1,
-  .bgimg-2,
-  .bgimg-4,
-  .bgimg-5,
-  .bgimg-6,
-  .bgimg-7,
-  .bgimg-8,
-  .bgimg-9,
-  .bgimg-10,
-  .bgimg-11,
-  .bgimg-3 {
-  background-size: cover !important;
-  background-position: center !important;
-  background-attachment: scroll;
-}
-
 }
 
 /* Extra Small Devices, Phones */
-@media screen and (min-width : 480px) {
+@media only screen and (min-width : 480px) {
 
   h1 {
     font-size: 30px;
@@ -457,6 +440,21 @@ a:hover {
     font-size: 30px;
     }
 
+  /* .bgimg-1,
+  .bgimg-2,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8,
+  .bgimg-9,
+  .bgimg-10,
+  .bgimg-11,
+  .bgimg-3 {
+/* background-size: auto !important; */
+/* background-position: center !important;
+} */
+
 #vid-wrapper {
   display: none;
 }
@@ -465,26 +463,10 @@ a:hover {
   font-size: 40px;
 }
 
-.bgimg-1,
-.bgimg-2,
-.bgimg-4,
-.bgimg-5,
-.bgimg-6,
-.bgimg-7,
-.bgimg-8,
-.bgimg-9,
-.bgimg-10,
-.bgimg-11,
-.bgimg-3 {
-background-size: cover !important;
-background-position: center !important;
-background-attachment: scroll;
-}
-
 }
 
   /* Small Devices, Tablets */
-  @media screen and (min-width : 768px) {
+  @media only screen and (min-width : 768px) {
     h1 {
       font-size: 50px;
     }
@@ -514,37 +496,10 @@ background-attachment: scroll;
         font-size: 80px;
       }
 
-      .bgimg-1 {
-        background-position: center;
-        background-repeat: no-repeat;
-        align-items: center;
-        background-attachment: fixed;
-        background-size: 700px;
-        height: 800px;
-      }
-
-      .bgimg-2,
-      .bgimg-4,
-      .bgimg-5,
-      .bgimg-6,
-      .bgimg-7,
-      .bgimg-8,
-      .bgimg-9,
-      .bgimg-10,
-      .bgimg-11,
-      .bgimg-3 {
-        height: 900px;
-        position:relative;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
   }
 
  /* Medium Devices, Desktops */
-@media screen and (min-width : 992px) {
+@media only screen and (min-width : 992px) {
 
 
   h1 {
@@ -576,31 +531,10 @@ background-attachment: scroll;
       font-size: 80px;
     }
 
-    .bgimg-1 {
-      background-position: center;
-      background-repeat: no-repeat;
-      align-items: center;
-      background-attachment: fixed;
-      background-size: 700px;
-      height: 800px;
-    }
+  }
 
-    .bgimg-2,
-    .bgimg-4,
-    .bgimg-5,
-    .bgimg-6,
-    .bgimg-7,
-    .bgimg-8,
-    .bgimg-9,
-    .bgimg-10,
-    .bgimg-11,
-    .bgimg-3 {
-      height: 900px;
-      position:relative;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  @media only screen and (min-width: 320px) and (max-width: 989px) {
+    .parallax {
+    background-attachment: scroll !important;
     }
-
   }
