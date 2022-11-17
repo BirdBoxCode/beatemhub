@@ -197,6 +197,7 @@ padding-right: 20px;
   align-items: center;
   background-attachment: fixed;
 }
+
 .bgimg-2,
 .bgimg-4,
 .bgimg-5,
@@ -207,21 +208,15 @@ padding-right: 20px;
 .bgimg-10,
 .bgimg-11,
 .bgimg-3 {
-  height: 900px;
+  height: 800px;
   position:relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-/* .img-box {
+  justify-content: center;
   display: block;
-  align-items: center;
-  background-attachment: fixed;
-  height: 800px;
-  background: transparent;
-} */
+}
 
 .bgimg-1 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.png?raw=true");
@@ -258,7 +253,6 @@ padding-right: 20px;
 }
 .bgimg-9 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
-
 }
 .bgimg-10 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Festivals.png?raw=true");
@@ -280,6 +274,8 @@ padding-right: 20px;
   position: relative;
   padding-left: 200px;
   padding-right: 200px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /* .text-wrapper p {
@@ -306,7 +302,7 @@ h2 {
 }
 
 h3 {
-  padding: 40px 00px;
+  padding-bottom: 40px;
   font: 50px 'Montserrat', sans-serif;
   color: #0eebdc;
   margin: auto;
@@ -319,18 +315,16 @@ p {
 }
 
 .caption {
-  margin: auto;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 40%;
   letter-spacing: 8px;
   font: 'Montserrat', sans-serif;
   font-size: 80px;
   font-weight: lighter;
   text-transform: uppercase;
-  position: relative;
-  left: 0;
-  top: 40%;
-  width: 100%;
   opacity: 1;
-  text-align: center;
   color: white;
 }
 
@@ -342,7 +336,7 @@ p {
   align-items: center;
   position: relative;
   width: 100%;
-
+  padding-bottom: 00px;
 }
 
 .email {
@@ -353,7 +347,6 @@ p {
   align-items:center;
   font-weight: lighter;
   padding-top: 12%;
-  margin: 0px 40px;
 }
 
 a{
@@ -447,6 +440,7 @@ a:hover {
 
     .bgimg-1 {
       background-size: 300px;
+      background-attachment: scroll !important;
     }
 
     .bgimg-2,
@@ -459,8 +453,9 @@ a:hover {
     .bgimg-10,
     .bgimg-11,
     .bgimg-3 {
+      height: 380px;
       background-attachment: scroll !important;
-      background-size: cover;
+      background-size: 700px;
   }
 
   #vid-wrapper {
@@ -506,6 +501,7 @@ a:hover {
     background-size: 300px;
   }
 
+  .bgimg-1
   .bgimg-2,
   .bgimg-4,
   .bgimg-5,
@@ -516,6 +512,7 @@ a:hover {
   .bgimg-10,
   .bgimg-11,
   .bgimg-3 {
+    height: 380px;
     background-attachment: scroll !important;
     background-size: cover;
 }
