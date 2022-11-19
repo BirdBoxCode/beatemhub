@@ -45,10 +45,6 @@ header {
 
 /* navbar style */
 
-.beh-nav {
-  width: 100%;
-}
-
 ul {
   list-style: none;
   height: 100%;
@@ -75,7 +71,7 @@ ul li:hover {
 }
 
 .sticky {
-  padding: 20px 00px;
+  padding: 9px 00px;
   background: black;
   /* opacity: 0.7; */
   transition: 0.3s;
@@ -93,6 +89,10 @@ ul li:hover {
 }
 
 /* Mobile Nav */
+
+.mobile-nav {
+margin-top: -5px;
+}
 
 #hamburger-icon {
   margin: auto 0;
@@ -168,17 +168,6 @@ padding-right: 20px;
 }
 .list-inline i:hover {
   color: rgb(148, 8, 164);
-}
-
-@media only screen and (max-width: 600px) {
-  header nav {
-    display: none;
-  }
-
-  #hamburger-icon {
-    display: block;
-  }
-
 }
 
 /******************************** END OF HEADER ********************************/
@@ -411,6 +400,19 @@ a:hover {
         .caption {
           font-size: 40px;
         }
+    }
+
+    /* Hamburger Bar Media Query */
+
+    @media only screen and (max-width: 600px) {
+      header nav {
+        display: none;
+      }
+
+      #hamburger-icon {
+        display: block;
+      }
+
     }
 
     /* Extra Small Devices, Phones */
