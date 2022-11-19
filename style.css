@@ -252,7 +252,7 @@ padding-right: 20px;
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Tournaments.png?raw=true");
 }
 .bgimg-9 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Highscore.png?raw=true");
+  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/highscore1.png?raw=true");
 }
 .bgimg-10 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Festivals.png?raw=true");
@@ -321,11 +321,14 @@ p {
   top: 40%;
   letter-spacing: 8px;
   font: 'Montserrat', sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   font-weight: lighter;
   text-transform: uppercase;
   opacity: 1;
   color: white;
+  background: rgba(0, 0, 0, 0.50);
+  padding: 4px 8px;
+  margin: 0;
 }
 
 /* **********footer********** */
@@ -374,12 +377,12 @@ a:hover {
 /* Media Queries */
 
  /* Medium Devices, Desktops */
- @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
 
   }
 
     /* Small Devices, Tablets */
-    @media only screen and (max-width : 768px) {
+@media only screen and (max-width : 768px) {
       h1 {
         font-size: 40px;
       }
@@ -406,7 +409,7 @@ a:hover {
         }
 
         .caption {
-          font-size: 60px;
+          font-size: 40px;
         }
     }
 
@@ -466,7 +469,7 @@ a:hover {
   }
 
   .caption {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
 
@@ -497,7 +500,7 @@ a:hover {
   }
 
   .caption {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .bgimg-1 {
