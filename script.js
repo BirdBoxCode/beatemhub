@@ -11,10 +11,10 @@ function onClickHandler(e){
   var content = document.getElementById("body");
 
   if(hamburger-icon.checked){
-    content.setAttribute( 'class', 'push-down' );
+    content.setAttribute( 'body', 'push-down' );
 
   }else{
-    content.setAttribute( 'class', '' );
+    content.setAttribute( 'body', 'push-down' );
   }
 }
 
