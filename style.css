@@ -179,7 +179,7 @@ padding-right: 20px;
 
 /* *********Images************* */
 
-.bgimg-1 {
+.bgimg-1, .bgimg-1-bottom {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
@@ -207,7 +207,7 @@ padding-right: 20px;
   display: flex;
 }
 
-.bgimg-1 {
+.bgimg-1, .bgimg-1-bottom {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.png?raw=true");
   background-size: 50%;
   height: 800px;
@@ -338,7 +338,6 @@ p {
   justify-content: center;
   align-items:center;
   font-weight: lighter;
-  padding-top: 12%;
 }
 
 a{
@@ -360,7 +359,6 @@ a:hover {
 }
 .center {
   text-align: center;
-  padding: 30px 0;
 }
 
 /* Media Queries */
@@ -368,52 +366,52 @@ a:hover {
  /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
-  }
+}
 
     /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-      h1 {
-        font-size: 40px;
-      }
+  h1 {
+    font-size: 40px;
+  }
 
-      h2 {
-        font-size: 30px;
-      }
+  h2 {
+    font-size: 30px;
+  }
 
-      h3 {
-        font-size: 40px;
-      }
+  h3 {
+    font-size: 40px;
+  }
 
-      .text-wrapper p {
-        font-size: 30px;
-        }
-
-      .text-wrapper {
-        padding-left: 150px;
-        padding-right: 150px;
-      }
-
-        #vid-wrapper {
-          display: none;
-        }
-
-        .caption {
-          font-size: 40px;
-        }
+  .text-wrapper p {
+    font-size: 30px;
     }
+
+  .text-wrapper {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+    #vid-wrapper {
+      display: none;
+    }
+
+    .caption {
+      font-size: 40px;
+    }
+}
 
     /* Hamburger Bar Media Query */
 
-    @media only screen and (max-width: 600px) {
-      header nav {
-        display: none;
-      }
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
 
-      #hamburger-icon {
-        display: block;
-      }
+  #hamburger-icon {
+    display: block;
+  }
 
-    }
+}
 
     /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -432,9 +430,9 @@ a:hover {
     font-size: 30px;
   }
 
-.text-wrapper p {
-  font-size: 20px;
-  }
+  .text-wrapper p {
+    font-size: 20px;
+    }
 
   .text-wrapper {
     padding-left:  10px;
@@ -445,25 +443,29 @@ a:hover {
     font-size: 30px;
     }
 
-    .bgimg-1 {
-      background-size: 300px;
-      height: 700px;
-      background-attachment: scroll !important;
-    }
+  .bgimg-1, .bgimg-1-bottom {
+    background-size: 300px;
+    height: 700px;
+    background-attachment: scroll !important;
+  }
 
-    .bgimg-2,
-    .bgimg-4,
-    .bgimg-5,
-    .bgimg-6,
-    .bgimg-7,
-    .bgimg-8,
-    .bgimg-9,
-    .bgimg-10,
-    .bgimg-11,
-    .bgimg-3 {
-      height: 380px;
-      background-attachment: scroll !important;
-      background-size: 700px;
+  .bgimg-1-bottom {
+    height: 600px;
+  }
+
+  .bgimg-2,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8,
+  .bgimg-9,
+  .bgimg-10,
+  .bgimg-11,
+  .bgimg-3 {
+    height: 380px;
+    background-attachment: scroll !important;
+    background-size: 700px;
   }
 
   #vid-wrapper {
@@ -473,6 +475,7 @@ a:hover {
   .caption {
     font-size: 20px;
   }
+
 }
 
  /* Custom, iPhone Retina */
@@ -505,7 +508,7 @@ a:hover {
     font-size: 20px;
   }
 
-  .bgimg-1 {
+  .bgimg-1, .bgimg-1-bottom {
     background-size: 300px;
     height: 700px;
   }
