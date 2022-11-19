@@ -177,6 +177,10 @@ padding-right: 20px;
   padding-top: 30px;
 }
 
+#vid-wrapper-mobile {
+  display: none;
+}
+
 /* *********Images************* */
 
 .bgimg-1, .bgimg-1-bottom {
@@ -266,13 +270,6 @@ padding-right: 20px;
   margin-top: 40px;
   margin-bottom: 40px;
 }
-
-/* .text-wrapper p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-
-} */
 
 h1 {
   font: 60px 'Montserrat', sans-serif;
@@ -472,6 +469,10 @@ a:hover {
     display: none;
   }
 
+  #vid-wrapper-mobile {
+    display: block;
+  }
+
   .caption {
     font-size: 20px;
   }
@@ -502,6 +503,10 @@ a:hover {
 
   #vid-wrapper {
     display: none;
+  }
+
+  #vid-wrapper-mobile {
+    display: block;
   }
 
   .caption {
