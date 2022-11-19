@@ -478,74 +478,6 @@ a:hover {
   }
 }
 
-    /* Extra Small Devices, Phones */
-    @media (orientation: landscape) {
-
-      h1 {
-        font-size: 30px;
-      }
-
-      h2 {
-        font-size: 20px;
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-
-      h3 {
-        font-size: 30px;
-      }
-
-      .text-wrapper p {
-        font-size: 20px;
-        }
-
-      .text-wrapper {
-        padding-left:  10px;
-        padding-right: 10px;
-      }
-
-      .email {
-        font-size: 30px;
-        }
-
-      .bgimg-1, .bgimg-1-bottom {
-        background-size: 300px;
-        height: 700px;
-        background-attachment: scroll !important;
-      }
-
-      .bgimg-1-bottom {
-        height: 600px;
-      }
-
-      .bgimg-2,
-      .bgimg-4,
-      .bgimg-5,
-      .bgimg-6,
-      .bgimg-7,
-      .bgimg-8,
-      .bgimg-9,
-      .bgimg-10,
-      .bgimg-11,
-      .bgimg-3 {
-        height: 380px;
-        background-attachment: scroll !important;
-        background-size: 700px;
-      }
-
-      #vid-wrapper {
-        display: none;
-      }
-
-      #vid-wrapper-mobile {
-        display: block;
-      }
-
-      .caption {
-        font-size: 20px;
-      }
-    }
-
  /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
   h1 {
@@ -600,4 +532,72 @@ a:hover {
     background-attachment: scroll !important;
     background-size: cover;
 }
+}
+
+/* Horizontal Orientation */
+ @media (orientation: landscape) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  .text-wrapper p {
+    font-size: 20px;
+    }
+
+  .text-wrapper {
+    padding-left:  10px;
+    padding-right: 10px;
+  }
+
+  .email {
+    font-size: 30px;
+    }
+
+  .bgimg-1, .bgimg-1-bottom {
+    background-size: 300px;
+    height: 420px;
+    background-attachment: scroll !important;
+  }
+
+  .bgimg-1-bottom {
+    height: 300px;
+  }
+
+  .bgimg-2,
+  .bgimg-4,
+  .bgimg-5,
+  .bgimg-6,
+  .bgimg-7,
+  .bgimg-8,
+  .bgimg-9,
+  .bgimg-10,
+  .bgimg-11,
+  .bgimg-3 {
+    height: 380px;
+    background-attachment: scroll !important;
+    background-size: 700px;
+  }
+
+  #vid-wrapper {
+    display: none;
+  }
+
+  #vid-wrapper-mobile {
+    display: block;
+  }
+
+  .caption {
+    font-size: 20px;
+  }
 }
