@@ -1,0 +1,9 @@
+#vid-wrapper {
+  box-sizing: border-box;
+  height:auto;
+  padding-top: 30px;
+}
+
+#vid-wrapper-mobile {
+  display: none;
+}
