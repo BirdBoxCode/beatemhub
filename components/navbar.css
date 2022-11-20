@@ -1,0 +1,143 @@
+header a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  background: transparent;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  z-index: 1000;
+  transition: 0.6s;
+  font-weight: bolder;
+  width: 100%;
+}
+
+/* navbar style */
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 00px 20px;
+}
+
+ul a {
+  color: white;
+  width: 100%;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.sticky {
+  padding: 9px 00px;
+  background: black;
+  /* opacity: 0.7; */
+  transition: 0.3s;
+  width: 100%;
+}
+
+.sticky ul li a {
+  color: white;
+  font-weight: bolder;
+}
+
+.sticky ul li a:hover {
+  color: #e678f4;
+  transition: 0.5s;
+}
+
+/* Mobile Nav */
+
+.mobile-nav {
+margin-top: -5px;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 20px;
+  transition: 0.6s;
+}
+
+.open .bar1 {
+-webkit-transform: rotate(-180deg) translate(-6px, 6px);
+transform: rotate(-180deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+-webkit-transform: rotate(180deg) translate(-6px, -8px);
+transform: rotate(180deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+/* set for pushing down content */
+max-height: 350px;
+}
+
+.mobile-menu {
+  display: none;
+  position: flex;
+  font-size: 40px;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 30px);
+  width: 100%;
+  background-color: black;
+}
+
+/* social icons */
+
+#social-icons {
+padding-right: 20px;
+}
+
+.icons {
+  color: white;
+  font-size: 25px;
+}
+
+.list-inline {
+  list-style: none;
+}
+
+.list-inline li {
+  display: inline-block;
+  padding: 0px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: #B7C4CF;
+}
+.list-inline i:hover {
+  color: rgb(148, 8, 164);
+}
