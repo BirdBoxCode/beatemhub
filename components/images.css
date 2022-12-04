@@ -27,25 +27,25 @@
 }
 
 .bgimg-1, .bgimg-1-bottom {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Logo.png?raw=true");
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1670164059/Beat%20Em%20Hub/beh_main_hawq4z.jpg");
   background-size: 50%;
   height: 800px;
 }
 
 .bgimg-2 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie1.PNG?raw=true");
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1670164122/Beat%20Em%20Hub/Indie_cjmkvo.png");
 }
 
 .bgimg-3 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/indie2.PNG?raw=true");
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1670164189/Beat%20Em%20Hub/retro_avl6ed.png");
 }
 
 .bgimg-4 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/Indie3.PNG?raw=true");
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1670164189/Beat%20Em%20Hub/retro_avl6ed.png");
 }
 
 .bgimg-5 {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/images-do_not_delete/docs/vrjoris.PNG?raw=true");
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1670164308/Beat%20Em%20Hub/VR_zmnk8f.png");
 }
 
 .bgimg-6 {
