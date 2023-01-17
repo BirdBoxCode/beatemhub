@@ -12,23 +12,26 @@ window.addEventListener("scroll", function () {
 });
 
 
-// scroll on click ABOUT
+// scroll on click
 function slowScrollToElement(elementId) {
   if (elementId === 'aboutarea') {
     var element = document.getElementById('aboutarea');
-    var elementPosition = element.getBoundingClientRect().top;
+    var elementPosition = element.offsetTop;
   } else if (elementId === 'servicesarea') {
     var element = document.getElementById('servicesarea');
-    var elementPosition = element.getBoundingClientRect().top;
+    var elementPosition = element.offsetTop;
   } else if (elementId === 'events') {
     var element = document.getElementById('events');
-    var elementPosition = element.getBoundingClientRect().top;
+    var elementPosition = element.offsetTop;
   } else if (elementId === 'clientarea') {
     var element = document.getElementById('clientarea');
-    var elementPosition = element.getBoundingClientRect().top;
+    var elementPosition = element.offsetTop;
   } else if (elementId === 'contactarea') {
     var element = document.getElementById('contactarea');
-    var elementPosition = element.getBoundingClientRect().top;
+    var elementPosition = element.offsetTop;
+  } else if (elementId === 'home') {
+    var element = document.getElementById('home');
+    var elementPosition = element.offsetTop;
   }
     var startPosition = window.pageYOffset;
     var distance = elementPosition - startPosition;
