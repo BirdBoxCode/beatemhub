@@ -1,4 +1,3 @@
-
 //burger bar
 
 function toggleMobileMenu(menu) {
@@ -10,7 +9,6 @@ window.addEventListener("scroll", function () {
   let header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
-
 
 // scroll on click
 function slowScrollToElement(elementId) {
@@ -52,4 +50,64 @@ function easeInOutCubic(t, b, c, d) {
   if (t < 1) return c/2*t*t*t + b;
   t -= 2;
   return c/2*(t*t*t + 2) + b;
-}
+};
+
+// SCROLL INTO VIEW
+
+// Select the element that you want to move into view
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOptions = {
+  threshold: 1,
+  rootMargin: "0px 0px -100px 0px"
+};
+
+// Create an IntersectionObserver
+const appearOnScroll = new IntersectionObserver
+(function(
+  entries,
+  appearOnScroll
+  ) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add('appear')
+        appearOnScroll.unobserve(entry.target);
+      }
+    })
+  },
+  appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+
+// Observe the element
+// observer.observe(element);
+
+
+
+// const appearOnScroll = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     // Check if the element is in view
+//     if (entry.intersectionRatio > 0) {
+//       // Add a class to the element to move it into view
+//       element.classList.add("move-into-view");
+//     } else {
+//       // Remove the class to move the element back to its original position
+//       element.classList.remove("move-into-view");
+//     }
+//   });
+// });
+
+// if (entry.intersectionRatio > 0) {
+//   // Add a class to the element to move it into view
+//   element.classList.add("move-into-view");
+// } else {
+//   // Remove the class to move the element back to its original position
+//   element.classList.remove("move-into-view");
+// }
+// });
+// });
