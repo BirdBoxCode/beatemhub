@@ -94,25 +94,7 @@ transform: rotate(-180deg) translate(-6px, 6px);
 transform: rotate(180deg) translate(-6px, -8px);
 }
 
-.open .mobile-menu {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-/* set for pushing down content */
-max-height: 410px;
-}
 
-.mobile-menu {
-  display: none;
-  position: flex;
-  font-size: 40px;
-  top: 50px;
-  left: 0;
-  height: calc(100vh - 30px);
-  width: 100%;
-  background-color: black;
-}
 
 /* social icons */
 
