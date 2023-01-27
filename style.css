@@ -81,6 +81,16 @@ div {
   margin-bottom: 40px;
 }
 
+a{
+  color: #0eebdc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e678f4;
+  transition: 0.5s;
+}
+
 h1 {
   font: 60px 'Montserrat', sans-serif;
   text-transform: uppercase;
