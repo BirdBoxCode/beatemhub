@@ -16,16 +16,6 @@
   font-weight: lighter;
 }
 
-a{
-  color: #0eebdc;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #e678f4;
-  transition: 0.5s;
-}
-
 .footer {
   background: rgba(45, 44, 44, 0);
   color: #0eebdc;
