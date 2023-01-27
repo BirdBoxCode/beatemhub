@@ -54,35 +54,9 @@ function easeInOutCubic(t, b, c, d) {
 
 // SCROLL INTO VIEW
 
-// Select the element that you want to move into view
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOptions = {
-  threshold: 1,
-  rootMargin: "0px 0px -100px 0px"
-};
-
-// Create an IntersectionObserver
-const appearOnScroll = new IntersectionObserver
-(function(
-  entries,
-  appearOnScroll
-  ) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add('appear')
-        appearOnScroll.unobserve(entry.target);
-      }
-    })
-  },
-  appearOptions);
-
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
-
+AOS.init({
+  duration: 1200,
+})
 
 // Observe the element
 // observer.observe(element);
