@@ -57,33 +57,3 @@ function easeInOutCubic(t, b, c, d) {
 AOS.init({
   duration: 1200,
 })
-
-
-
-// Observe the element
-// observer.observe(element);
-
-
-
-// const appearOnScroll = new IntersectionObserver(entries => {
-//   entries.forEach(entry => {
-//     // Check if the element is in view
-//     if (entry.intersectionRatio > 0) {
-//       // Add a class to the element to move it into view
-//       element.classList.add("move-into-view");
-//     } else {
-//       // Remove the class to move the element back to its original position
-//       element.classList.remove("move-into-view");
-//     }
-//   });
-// });
-
-// if (entry.intersectionRatio > 0) {
-//   // Add a class to the element to move it into view
-//   element.classList.add("move-into-view");
-// } else {
-//   // Remove the class to move the element back to its original position
-//   element.classList.remove("move-into-view");
-// }
-// });
-// });
