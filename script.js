@@ -58,6 +58,8 @@ AOS.init({
   duration: 1200,
 })
 
+
+
 // Observe the element
 // observer.observe(element);
 
