@@ -71,7 +71,7 @@ body {
 .text-wrapper {
   display: block;
   box-sizing: border-box;
-  background-color: #000000;
+  /* background-color: #000000; */
   text-align: center;
   position: relative;
   padding-left: 200px;
@@ -174,7 +174,7 @@ p {
 /* Page Banners */
 
 .about-banner {
-  padding-top: 30px;
+  padding-top: 70px;
   width: 100%;
   height: 400px;
   background-attachment: fixed;
