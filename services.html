@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary">
+    <link rel = "shortcut icon" type = "image/jpg" href = "https://github.com/ThiefinaboX/beatemhub/blob/main/docs/favicon.png?raw=true">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600&family=Montserrat+Alternates:wght@200&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Beat 'Em Hub</title>
+    <meta name="description" content= "Berlin based gaming network and gaming event organiser">
+<!-- test -->
+  </head>
+
+  <body>
+    <div class="boxed-wrapper">
+      <header>
+        <nav class ="beh-nav">
+          <a id="home"></a>
+          <ul>
+            <li><a href="index.html" onclick="slowScrollToElement('home')">Home</a></li>
+            <li><a href="aboutus.html" onclick="slowScrollToElement('aboutarea')">About</a></li>
+            <li><a href="services.html" onclick="slowScrollToElement('servicesarea')">Services</a></li>
+            <li><a href="events.html" onclick="slowScrollToElement('events')">Events</a></li>
+            <li><a href="references.html" onclick="slowScrollToElement('clientarea')">References</a></li>
+            <li><a href="#contactarea" onclick="slowScrollToElement('contactarea')">Contact</a></li>
+          </ul>
+        </nav>
+        <div class ="mobile-nav">
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="#home" onclick="slowScrollToElement('home')">Home</a></li>
+              <li><a href="#aboutarea" onclick="slowScrollToElement('aboutarea')">About</a></li>
+              <li><a href="#servicesarea" onclick="slowScrollToElement('servicesarea')">Services</a></li>
+              <li><a href="#events" onclick="slowScrollToElement('events')">Events</a></li>
+              <li><a href="#clientarea" onclick="slowScrollToElement('clientarea')">References</a></li>
+              <li><a href="#contactarea" onclick="slowScrollToElement('contactarea')">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- social icons -->
+        <div id="social-icons">
+          <ul class = "icons">
+            <li>
+              <a href="https://discord.gg/Sd22pa438Q" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/beatemhub/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/BeatEmHub" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/beat-em-hub/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meetup.com/de-DE/clash-of-nerds/" target="_blank">
+                <i class="fa-brands fa-meetup"></i>
+              </a>
+            </li>
+          </ul>
+      </header>
+    </div>
+    <!-- ************END OF HEADER*********** -->
+
+    <!-- Animation -->
+    <div class="container2">
+      <section>
+        <div class="loader loader-12">
+          <svg class="loader-star star1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+                <polygon points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+             </svg>
+          <svg class="loader-star star2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+                <polygon points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+             </svg>
+          <svg class="loader-star star3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+                <polygon points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+             </svg>
+          <svg class="loader-star star4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+                <polygon points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+             </svg>
+          <svg class="loader-star star5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+                <polygon points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+             </svg>
+          <svg class="loader-star star6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 23.172 23.346" xml:space="preserve">
+                <polygon points="11.586,0 8.864,8.9 0,8.9 7.193,14.447 4.471,23.346 11.586,17.84 18.739,23.346 16.77,14.985 23.172,8.9 14.306,8.9" />
+             </svg>
+        </div>
+      </section>
+    </div>
+
+    <!-- Info -->
+
+      <div class = "container" data-aos="flip-up">
+        <div class="text-wrapper">
+          <h3>Services</h3>
+          <p>Event Organization, Production & Management. Indoor Gaming Areas & Outdoor Festivals.</p><br>
+          <p>Live Music, Streaming Services & Event Moderation. Branded Events. On-Site Support.</p><br>
+          <p><strong>GAMING VARIETY</strong>: Retro & Modern Gaming, Arcade Machines, Virtual Reality,
+          Indie Gaming, Flipper Machines, Card Games (e.g. MTG), Pen & Paper (e.g. DnD),
+          Board Games, Esports, Tournaments, High Score Challenges, Speed Runs and more..
+          </p>
+        </div>
+      </div>
+    </body>
+  <script src="script.js"></script>
+  </html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary">
+    <link rel = "shortcut icon" type = "image/jpg" href = "https://github.com/ThiefinaboX/beatemhub/blob/main/docs/favicon.png?raw=true">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;500;600&family=Montserrat+Alternates:wght@200&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/f1eb067cf6.js" crossorigin="anonymous"></script>
+    <title>Beat 'Em Hub</title>
+    <meta name="description" content= "Berlin based gaming network and gaming event organiser">
+<!-- test -->
+  </head>
+
+  <body>
+    <div class="boxed-wrapper">
+      <header>
+        <nav class ="beh-nav">
+          <a id="home"></a>
+          <ul>
+            <li><a href="index.html" onclick="slowScrollToElement('home')">Home</a></li>
+            <li><a href="aboutus.html" onclick="slowScrollToElement('aboutarea')">About</a></li>
+            <li><a href="services.html" onclick="slowScrollToElement('servicesarea')">Services</a></li>
+            <li><a href="events.html" onclick="slowScrollToElement('events')">Events</a></li>
+            <li><a href="references.html" onclick="slowScrollToElement('clientarea')">References</a></li>
+            <li><a href="#contactarea" onclick="slowScrollToElement('contactarea')">Contact</a></li>
+          </ul>
+        </nav>
+        <div class ="mobile-nav">
+          <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="#home" onclick="slowScrollToElement('home')">Home</a></li>
+              <li><a href="#aboutarea" onclick="slowScrollToElement('aboutarea')">About</a></li>
+              <li><a href="#servicesarea" onclick="slowScrollToElement('servicesarea')">Services</a></li>
+              <li><a href="#events" onclick="slowScrollToElement('events')">Events</a></li>
+              <li><a href="#clientarea" onclick="slowScrollToElement('clientarea')">References</a></li>
+              <li><a href="#contactarea" onclick="slowScrollToElement('contactarea')">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- social icons -->
+        <div id="social-icons">
+          <ul class = "icons">
+            <li>
+              <a href="https://discord.gg/Sd22pa438Q" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/beatemhub/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/BeatEmHub" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/beat-em-hub/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.meetup.com/de-DE/clash-of-nerds/" target="_blank">
+                <i class="fa-brands fa-meetup"></i>
+              </a>
+            </li>
+          </ul>
+      </header>
+    </div>
+    <!-- ************END OF HEADER*********** -->
+    <div class="about-wrapper">
+      <div class="about-banner">
+        <div class="about-title">
+          <img id="about-img" src ="https://res.cloudinary.com/depkh8amy/image/upload/v1677274392/Beat%20Em%20Hub/gamer_frslo5.png">
+        </div>
+      </div>
+      <div class = "container">
+        <div class="text-wrapper" >
+          <h1>What is Beat 'Em Hub?</h1>
+          <h2>Beat 'Em Hub is a Berlin-based gaming agency that creates immersive experiences.</h2>
+          <p>We organize both B2B and B2C events. We offers guests a place to play for free with arcades, VR, retro and modern consoles - while enjoying comfy couches, yummy drinks, nostalgia deco, and geeky chats. We showcase new indie games in our <strong>BETA TEST AREA</strong>, stage live Q&A with game developers, and collect feedback.</p><br>
+          <p>For B2B events, we offer curated programs including unique panel discussions, live game pitches with an expert jury, workshops, and much more!</p>
+          <br><p>We also offer to create fun gaming and leisure areas for <strong>festivals, private, and corporate events</strong> - with our established company network.</p>
+          <br><p>Within the educational sector, our network aims to increase awareness & safety in digital media and gaming for kids, youth & parents through a series of intergenerational workshops to promote communication and open discussion through fun environments.
+          <br><br><p>We also have a new project in development for personal career growth in the gaming industry. Stay tuned for more info.</p>
+        </div>
+      </div>
+      <ul class="tilesWrap">
+        <li>
+          <h2>I</h2>
+          <h3>B2C Events</h3>
+          <p>
+            Bring all types of gaming under one roof while bridging the gap between consumers and the gaming industry.
+          </p>
+          <button>Events</button>
+        </li>
+        <li>
+          <h2>II</h2>
+          <h3>B2B Events</h3>
+          <p>
+            B2B Events - from PC to Console, indie to AAA, we strive to make the gaming industry more accessible by connecting and giving a space to push creativity.
+          </p>
+          <button>Events</button>
+        </li>
+        <li>
+          <h2>III</h2>
+          <h3>Education</h3>
+          <p>
+            We aim to increase awareness & safety in digital media and gaming for kids, youth & parents and promote communication in fun environments.
+          </p>
+          <button>Read more</button>
+        </li>
+        <li>
+          <h2>IV</h2>
+          <h3>Career</h3>
+          <p>
+            We aim to give the tools and resources for personal development to various career paths in the gaming industry.
+          </p>
+          <button>Read more</button>
+        </li>
+      </ul>
+      <div class = "container" data-aos="flip-up">
+        <div class="text-wrapper" >
+        <br><p> BEAT EM HUB has an international founding and core team that masters all aspects and delivers services around gaming, event production, logistics, infrastructure, team communication, IT management, digital integration, timeline coordination, DJing, sound & visual design,
+        creative concept, copywriting, content, journalism, photography, film, project handling, budget planning, and more, on- & offline.
+        <br><br>For every client, BEAT EM HUB sets up a tailor-fit team to maximize efficiency, effectiveness, and safety of each project's handling.
+        We aim 24/7 to minimize overhead and maximize WOW for our clients and all gamers.          </p>
+        </div>
+      </div>
+      <div class = "container" data-aos="flip-up">
+        <div class="text-wrapper" >
+          <h1>Who is Beat 'Em Hub?</h1>
+        </div>
+      </div>
+      <!-- Profile Cards -->
+      <div class="container3">
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/D4E35AQEYn1F-x8bg-g/profile-framedphoto-shrink_800_800/0/1671014796028?e=1675540800&v=beta&t=1GIGhesQ4h-UzZKjZeEcU4ay9T5zk_vjok6P35EB4ek" alt="Person" class="card__image">
+          <p class="card__name">Fernanda Pagani</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+                CEO
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/C5603AQHdOAqNKUxK3g/profile-displayphoto-shrink_800_800/0/1606993577022?e=1680134400&v=beta&t=7ivlLKEfTnd1SWMiK7a7rP49HzK6RXRmgN_hsGjtZ9E" alt="Person" class="card__image">
+          <p class="card__name">Arjuna "AJ" Sath</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              CEO
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="http://dexai-arts.com/wp-content/uploads/2021/05/joris.png" alt="Person" class="card__image">
+          <p class="card__name">Joris Schnabel</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              CEO
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/C4D03AQER0wOQeohcrA/profile-displayphoto-shrink_800_800/0/1652430649078?e=1680134400&v=beta&t=ISozqfj9vorOrFqaZlZmJ5PB2iKhq23njZoG09WfOcg" alt="Person" class="card__image">
+          <p class="card__name">Chris McCarthy</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              CEO
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/C4D03AQFW6hfByWcOhg/profile-displayphoto-shrink_800_800/0/1652347463064?e=1680134400&v=beta&t=JndWiWWeSSgaKf1N6ZxdYnzoL9F7vBrK2XHSWNeQE-c" alt="Person" class="card__image">
+          <p class="card__name">Sam James Cowie</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              Head of Logistics
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/D5603AQFQRfx6Xy2CVA/profile-displayphoto-shrink_800_800/0/1665684600947?e=1680134400&v=beta&t=vk2GejS3uraxDD_FFG7WqRbkrqUtBXe6xyvFdJQwxcE" alt="Person" class="card__image">
+          <p class="card__name">Vedran Bernobic</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              Event Technician
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/C4E03AQGwqGhkwmof1Q/profile-displayphoto-shrink_400_400/0/1598379060043?e=1680739200&v=beta&t=hxUObl4OY7Hk3v_XM2v_AhhpX9lAk6EnPFLZ4cGfeTM" alt="Person" class="card__image">
+          <p class="card__name">Hinnerk Künnen</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              Back-end Developer (NerdAdvisor)
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://media.licdn.com/dms/image/D4E35AQHfIb95U3vEBQ/profile-framedphoto-shrink_400_400/0/1671014598559?e=1675681200&v=beta&t=RUJIGs64AKyxuEVe6wKGDUJm1iQ3D3lKlv8MnjvskzU" alt="Person" class="card__image">
+          <p class="card__name">Luthfi "Adi"" Pratomo</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              Front-end Developer (NerdAdvisor)
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNk-NWvVg2Tv4fxVza-QZIMB2GXLWk7IA5qw&usqp=CAU" alt="Person" class="card__image">
+          <p class="card__name">My Tran Bui</p>
+          <div class="grid-container">
+            <div class="grid-child-posts">
+              Full-stack Developer (NerdAdvisor)
+            </div>
+          </div>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-codepen"></i></a></li>
+          </ul>
+          <button class="btn draw-border">Contact</button>
+        </div>
+      </div>
+      <footer class="center-footer">
+          <div id="email-contact">
+            <p class="email"><strong>For inquiries, reach out to: <a href = "mailto:contact@beatemhub.com">contact@beatemhub.com</a></strong></p>
+          </div>
+          <p2>Beat Em Hub (an afflilate of Dexai Arts UG)</p>
+      </footer>
+    </div>
+    </body>
+  <script src="script.js"></script>
+  </html>
