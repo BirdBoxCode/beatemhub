@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500&display=swap");
+
 @import url("components/navbar.css");
 @import url("components/video.css");
 @import url("components/images.css");
 @import url("components/footer.css");
-@import url("components/media.css");
+@import url("components/cards.css");
+@import url("components/animations.css");
 
 *{
   margin: 0px;
@@ -27,16 +30,12 @@ body {
   overflow-x: hidden;
 }
 
-div {
-  display: block;
-}
-
 /* *******TEXT********* */
 .container {
   background-color: rgba(255,255,255,0);
   margin: auto;
   padding: auto;
-  display: contents;
+  display: flex;
 }
 
 #border-bottom {
@@ -70,15 +69,16 @@ div {
 }
 
 .text-wrapper {
-  display: block;
   box-sizing: border-box;
-  background-color: #000000;
+  /* background-color: #000000; */
   text-align: center;
   position: relative;
   padding-left: 200px;
   padding-right: 200px;
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 100%;
+  display: block;
 }
 
 a{
@@ -161,10 +161,43 @@ p {
   grid-column: 3 / 4;
   transform: translateX(+50%)
 }
+
+/* backgrounds */
+
+.about-wrapper {
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677276606/Beat%20Em%20Hub/about-bg_hxadrf.png");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Page Banners */
+
+.about-banner {
+  padding-top: 70px;
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+}
+
+.about-title {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 20%;
+}
+
+#about-img {
+  position: absolute
+}
+
 /* MEDIA QUERIES */
 
  /* Medium Devices, Desktops */
- @media only screen and (max-width : 992px) {
+@media only screen and (max-width : 992px) {
 
 }
 
@@ -198,6 +231,11 @@ p {
     .caption {
       font-size: 40px;
     }
+
+    #about-img {
+      width: 700px;
+    }
+
 }
 
     /* Hamburger Bar Media Query */
@@ -297,6 +335,10 @@ p {
     width: 100%;
     background-color: black;
   }
+
+  #about-img {
+    width: 500px;
+  }
 }
 
  /* Custom, iPhone Retina */
@@ -352,5 +394,9 @@ p {
     height: 380px;
     background-attachment: scroll !important;
     background-size: cover;
+}
+
+#about-img {
+  width: 300px;
 }
 }
