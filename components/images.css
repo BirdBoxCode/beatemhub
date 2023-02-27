@@ -15,7 +15,7 @@
 .bgimg-9,
 .bgimg-10,
 .bgimg-3 {
-  height: 800px;
+  height: 100vh;
   position:relative;
   background-attachment: fixed;
   background-position: center;
