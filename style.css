@@ -282,7 +282,7 @@ p {
     }
 
   .bgimg-1, .bgimg-1-bottom {
-    background-size: 800px;
+    background-size: 600px;
     height: 800px;
     background-attachment: scroll !important;
   }
