@@ -45,7 +45,7 @@ ul li:hover {
 
 .sticky {
   padding: 9px 00px;
-  background: black;
+  background: #2C1546;
   /* opacity: 0.7; */
   transition: 0.3s;
   width: 100%;

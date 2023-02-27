@@ -1,39 +1,48 @@
-#email-contact {
+/* #email-contact {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
   padding-bottom: 00px;
-}
-
-.email {
-  font: 40px 'Kanit', sans-serif;
-  display: block;
-  text-align: center;
-  justify-content: center;
-  align-items:center;
-  font-weight: lighter;
-}
+} */
 
 .center-footer {
-  background-color: black;
+  background-color: #2C1546;
+  text-align: center;
+  padding: 40px 40px;
+}
+
+.footer-container {
+display: inline-flex;
+}
+
+.footer-left {
+  text-align: center;
+  display: block;
+  width: 50%;
+}
+
+h5 {
+  font-size: 25px;
+  text-align: center;
+  padding-right: 15px;
+}
+
+.footer-right {
+  display: block;
 }
 
 .center-footer p {
-  background: rgba(45, 44, 44, 0);
-  color: #0eebdc;
-  font-style: italic;
-  height: 40px;
-  font-size: 40px;
+  background: #2C1546;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
 }
 
 p2 {
-  color: #0eebdc;
+  color: white;
   font-style: italic;
-  height: 60px;
   font-size: 15px;
-}
-.center-footer {
-  text-align: center;
+  display: block;
 }
