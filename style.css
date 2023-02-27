@@ -281,9 +281,22 @@ p {
     font-size: 30px;
     }
 
+    .footer-container {
+      display: block;
+  }
+
+  .footer-left {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+  h5 {
+    padding: 0px;
+  }
+
   .bgimg-1, .bgimg-1-bottom {
     background-size: 600px;
-    height: 100vh;
+    height: 800px;
     background-attachment: scroll !important;
   }
 
