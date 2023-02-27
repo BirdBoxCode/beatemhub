@@ -282,8 +282,8 @@ p {
     }
 
   .bgimg-1, .bgimg-1-bottom {
-    background-size: 600px;
-    height: 800px;
+    background-size: 800px;
+    height: 1000px;
     background-attachment: scroll !important;
   }
 
