@@ -12,13 +12,11 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-
 }
 
 .boxed-wrapper {
   display: block;
   width: 100%;
-  overflow-x: hidden;
 }
 
 body {
@@ -246,10 +244,6 @@ p {
   header nav {
     display: none;
   }
-
-  #social-icons {
-    padding-top: 10px;
-    }
 
   #hamburger-icon {
     display: block;
