@@ -12,6 +12,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  overflow-x: 0px;
 }
 
 .boxed-wrapper {
@@ -245,14 +246,40 @@ p {
     display: none;
   }
 
+  header {
+    width: 85%;
+  }
+
   #hamburger-icon {
     display: block;
+  }
+
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-height: 240px;
+    }
+
+  .mobile-menu {
+    display: none;
+    position: flex;
+    font-size: 20px;
+    top: 00px;
+    left: 0;
+    width: 100%;
+    background-color: black;
   }
 
 }
 
     /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+  header {
+    width: 85%;
+  }
 
   h1 {
     font-size: 30px;
@@ -411,5 +438,18 @@ p {
 
 #about-img {
   width: 300px;
+}
+
+.footer-container {
+  display: block;
+}
+
+.footer-left {
+width: 100%;
+padding-bottom: 20px;
+}
+
+h5 {
+padding: 0px;
 }
 }
