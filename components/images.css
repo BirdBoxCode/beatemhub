@@ -26,8 +26,8 @@
 }
 
 .bgimg-1, .bgimg-1-bottom {
-  background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/main/docs/Logo.jpeg?raw=true");
-  background-size: 50%;
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677511540/Beat%20Em%20Hub/index-bg_f1g2e9.png");
+  /* background-size: 50%; */
   height: 100vh;
 }
 
