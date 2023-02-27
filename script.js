@@ -10,6 +10,7 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
+
 // scroll on click
 function slowScrollToElement(elementId) {
   if (elementId === 'aboutarea') {
