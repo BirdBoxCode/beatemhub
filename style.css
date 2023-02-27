@@ -283,13 +283,13 @@ p {
 
   .bgimg-1, .bgimg-1-bottom {
     background-size: 600px;
-    height: 600px;
+    height: 800px;
     background-attachment: scroll !important;
   }
 
-  .bgimg-1-bottom {
+  /* .bgimg-1-bottom {
     height: 600px;
-  }
+  } */
 
   .bgimg-2,
   .bgimg-4,
