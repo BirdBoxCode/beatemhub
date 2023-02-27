@@ -247,6 +247,10 @@ p {
     display: none;
   }
 
+  #social-icons {
+    padding-top: 10px;
+    }
+
   #hamburger-icon {
     display: block;
   }
