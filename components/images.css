@@ -4,6 +4,7 @@
   display: block;
   align-items: center;
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 .bgimg-2,
@@ -23,6 +24,7 @@
   background-size: cover;
   justify-content: center;
   display: flex;
+  overflow-x: hidden;
 }
 
 .bgimg-1, .bgimg-1-bottom {
