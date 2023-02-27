@@ -12,7 +12,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow-x: 0px;
+  overflow-x: hidden;
 }
 
 .boxed-wrapper {
