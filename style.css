@@ -400,7 +400,7 @@ p {
 
   .about-wrapper {
     background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677276606/Beat%20Em%20Hub/about-bg_hxadrf.png");
-    width: 100%;
+    background-size: cover;
   }
 
   .about-banner {
@@ -408,7 +408,7 @@ p {
   }
 
   .tilesWrap {
-    display: contents;
+    display: block;
   }
 
   .container3{
