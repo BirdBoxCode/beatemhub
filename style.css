@@ -478,9 +478,28 @@ p {
     background-size: cover;
 }
 
-.about-wrapper {
+ /* media about page */
+
+ .about-wrapper {
   background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677276606/Beat%20Em%20Hub/about-bg_hxadrf.png");
-  width: 100%;
+  background-size: cover;
+}
+
+.about-banner {
+  height: 200px;
+}
+
+.tilesWrap {
+  display: block;
+}
+
+.container3{
+  display: grid;
+  grid: none;
+}
+
+.wrapper2 {
+padding-bottom: 18rem;
 }
 
 #about-img {
