@@ -198,7 +198,13 @@ p {
 
  /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  #about-img {
+    width: 70%;
+  }
 
+  .tilesWrap {
+    display: contents;
+  }
 }
 
     /* Small Devices, Tablets */
@@ -233,7 +239,16 @@ p {
     }
 
     #about-img {
-      width: 700px;
+      width: 70%;
+    }
+
+    .tilesWrap {
+      display: contents;
+    }
+
+    .container3{
+      display: grid;
+      grid: none;
     }
 
 }
@@ -265,6 +280,19 @@ p {
     left: 0;
     width: 100%;
     background-color: #2C1546;
+  }
+
+  #about-img {
+    width: 70%;
+  }
+
+  .tilesWrap {
+    display: contents;
+  }
+
+  .container3{
+    display: grid;
+    grid: none;
   }
 
 }
@@ -368,8 +396,18 @@ p {
   }
 
   #about-img {
-    width: 500px;
+    width: 80%;
   }
+
+  .tilesWrap {
+    display: contents;
+}
+
+.container3{
+  display: grid;
+  grid: none;
+}
+
 }
 
  /* Custom, iPhone Retina */
@@ -443,5 +481,10 @@ padding-bottom: 20px;
 
 h5 {
 padding: 0px;
+}
+
+.container3{
+  display: grid;
+  grid: none;
 }
 }
