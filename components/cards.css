@@ -321,7 +321,6 @@
 .tabs {
   position: relative;
   background: #2C1546;
-
   display: flex;
 }
 .tabs::before,
