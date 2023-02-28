@@ -402,9 +402,9 @@ p {
     width: 100%;
   }
 
-  .about-banner {
+  /* .about-banner {
     height: 200px;
-  }
+  } */
 
   .tilesWrap {
     display: grid;
@@ -416,7 +416,7 @@ p {
 }
 
 .wrapper2 {
-  padding-bottom: 22rem;
+  padding-bottom: 18rem;
 }
 
 }
@@ -475,6 +475,11 @@ p {
     height: 380px;
     background-attachment: scroll !important;
     background-size: cover;
+}
+
+.about-wrapper {
+  background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677276606/Beat%20Em%20Hub/about-bg_hxadrf.png");
+  width: 100%;
 }
 
 #about-img {
