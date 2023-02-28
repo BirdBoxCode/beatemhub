@@ -321,8 +321,8 @@
   position: relative;
   margin: 3rem 0;
   background: #2C1546;
-  margin: 20px;
 }
+
 .tabs::before,
 .tabs::after {
   content: "";
