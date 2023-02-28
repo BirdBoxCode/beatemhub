@@ -345,7 +345,8 @@ p {
   }
 
   .bgimg-1, .bgimg-1-bottom {
-    height: 100vh;
+    background-size: 600px;
+    height: 800px;
     background-attachment: scroll !important;
   }
 
@@ -402,7 +403,7 @@ p {
 
   .about-wrapper {
     background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677602781/Beat%20Em%20Hub/about-bg2_dm0pmy.png");
-    height: 1000px;
+    background-size: 600px;
     background-attachment: fixed;
   }
 
@@ -410,11 +411,15 @@ p {
     height: 200px;
   }
 
+  .tilesWrap {
+    display: block;
+  }
+
   .tilesWrap li h2 {
     right: 45%;
   }
 
-  .container3 {
+  .container3{
     display: grid;
     grid: none;
   }
@@ -460,7 +465,8 @@ p {
   }
 
   .bgimg-1, .bgimg-1-bottom {
-    height: 100vh;
+    background-size: 600px;
+    height: 800px;
     background-attachment: scroll !important;
   }
 
@@ -484,7 +490,7 @@ p {
 
 .about-wrapper {
   background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677602781/Beat%20Em%20Hub/about-bg2_dm0pmy.png");
-  height: 1000px;
+  background-size: cover;
   background-attachment: fixed;
 }
 
