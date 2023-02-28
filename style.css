@@ -203,8 +203,9 @@ p {
   }
 
   .tilesWrap {
-    display: contents;
+    display: block;
   }
+
 }
 
     /* Small Devices, Tablets */
@@ -243,7 +244,7 @@ p {
     }
 
     .tilesWrap {
-      display: contents;
+      display: block;
     }
 
     .container3{
@@ -287,8 +288,7 @@ p {
   }
 
   .tilesWrap {
-    display: contents;
-    justify-content: flex-end;
+    display: block;
   }
 
   .container3{
@@ -518,10 +518,5 @@ padding-bottom: 20px;
 
 h5 {
 padding: 0px;
-}
-
-.container3{
-  display: grid;
-  grid: none;
 }
 }
