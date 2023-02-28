@@ -169,7 +169,7 @@ p {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Page Banners */
@@ -346,10 +346,6 @@ p {
     background-attachment: scroll !important;
   }
 
-  /* .bgimg-1-bottom {
-    height: 600px;
-  } */
-
   .bgimg-2,
   .bgimg-4,
   .bgimg-5,
@@ -399,13 +395,28 @@ p {
     width: 80%;
   }
 
+  /* media about page */
+
+  .about-wrapper {
+    background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677276606/Beat%20Em%20Hub/about-bg_hxadrf.png");
+    width: 100%;
+  }
+
+  .about-banner {
+    height: 200px;
+  }
+
   .tilesWrap {
-    display: contents;
+    display: grid;
 }
 
 .container3{
   display: grid;
   grid: none;
+}
+
+.wrapper2 {
+  padding-bottom: 22rem;
 }
 
 }

@@ -16,7 +16,6 @@
 	vertical-align: top;
 	margin: 10px;
 	min-height: 25vh;
-  max-height: 25vh;
 	background: #2C1546;
 	border: 1px solid #252727;
 	text-align: center;
@@ -316,12 +315,13 @@
   max-width: 70rem;
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 10rem;
 }
 .tabs {
   position: relative;
   margin: 3rem 0;
   background: #2C1546;
-  height: 14.75rem;
+  margin: 20px;
 }
 .tabs::before,
 .tabs::after {
@@ -345,7 +345,7 @@
   padding: 0 1.618em;
   background: #2C1546;
   border-right: 0.125rem solid #2C1546;
-  color: #fff;
+  color: #0eebdc;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
@@ -355,7 +355,6 @@
   transition: top 0.25s;
 }
 .tab-content {
-  height: 12rem;
   position: absolute;
   z-index: 1;
   top: 2.75em;
@@ -363,7 +362,6 @@
   padding: 1.618rem;
   background: #2C1546;
   color: #fff;
-  border-bottom: 0.25rem solid #bdc3c7;
   opacity: 0;
   font-size: large;
   transition: all 0.35s;
