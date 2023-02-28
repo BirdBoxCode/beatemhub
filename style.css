@@ -403,13 +403,12 @@ p {
     width: 100%;
   }
 
-  /* .about-banner {
+  .about-banner {
     height: 200px;
-  } */
+  }
 
   .tilesWrap {
     display: contents;
-    justify-content: flex-end;
   }
 
   .container3{
