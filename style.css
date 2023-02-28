@@ -288,6 +288,7 @@ p {
 
   .tilesWrap {
     display: contents;
+    justify-content: flex-end;
   }
 
   .container3{
@@ -407,13 +408,14 @@ p {
   } */
 
   .tilesWrap {
-    display: grid;
-}
+    display: contents;
+    justify-content: flex-end;
+  }
 
-.container3{
-  display: grid;
-  grid: none;
-}
+  .container3{
+    display: grid;
+    grid: none;
+  }
 
 .wrapper2 {
   padding-bottom: 18rem;
