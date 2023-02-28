@@ -320,9 +320,9 @@
 
 .tabs {
   position: relative;
-  margin: 3rem 0;
   background: #2C1546;
-  height: 14.75rem;
+
+  display: flex;
 }
 .tabs::before,
 .tabs::after {

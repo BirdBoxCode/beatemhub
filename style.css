@@ -168,7 +168,6 @@ p {
   background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677602781/Beat%20Em%20Hub/about-bg2_dm0pmy.png");
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -291,6 +290,10 @@ p {
     display: block;
   }
 
+  .tilesWrap li h2 {
+    right: 45%;
+  }
+
   .container3{
     display: grid;
     grid: none;
@@ -401,7 +404,6 @@ p {
   .about-wrapper {
     background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677602781/Beat%20Em%20Hub/about-bg2_dm0pmy.png");
     background-size: 600px;
-    height: 100vh;
   }
 
   .about-banner {
@@ -412,13 +414,17 @@ p {
     display: block;
   }
 
+  .tilesWrap li h2 {
+    right: 45%;
+  }
+
   .container3{
     display: grid;
     grid: none;
   }
 
 .wrapper2 {
-  padding-bottom: 18rem;
+  height: 25rem;
 }
 
 }
@@ -494,13 +500,17 @@ p {
   display: block;
 }
 
+.tilesWrap li h2 {
+  right: 45%;
+}
+
 .container3{
   display: grid;
   grid: none;
 }
 
 .wrapper2 {
-padding-bottom: 18rem;
+  height: 25rem;
 }
 
 #about-img {
