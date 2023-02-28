@@ -317,12 +317,13 @@
   margin: 0 auto;
   padding-bottom: 10rem;
 }
+
 .tabs {
   position: relative;
   margin: 3rem 0;
   background: #2C1546;
+  height: 14.75rem;
 }
-
 .tabs::before,
 .tabs::after {
   content: "";
