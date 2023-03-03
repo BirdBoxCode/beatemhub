@@ -403,9 +403,9 @@ p {
 
   .about-wrapper {
     background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1677602781/Beat%20Em%20Hub/about-bg2_dm0pmy.png");
+    background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
   }
 
   .about-banner {
