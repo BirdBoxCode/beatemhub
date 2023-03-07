@@ -121,17 +121,21 @@ h4 {
   margin: auto;
 }
 
-.container h4 {
-
-
+.services-container {
+  columns: 2;
+  column-gap: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-#services-list {
+.services-container li {
 color: white;
-font-weight: bold;
+font-weight:lighter;
 list-style:square;
 line-height: 1.3em;
 text-align: left;
+font-size: 1.5em;
 }
 
 p {
@@ -353,6 +357,10 @@ p {
     padding-bottom: 20px;
 }
 
+  h4 {
+    font-size: 8px;
+  }
+
   h5 {
     padding: 0px;
   }
@@ -443,14 +451,15 @@ p {
 }
 
 /* media services page */
-#services-container {
-display: block;
+.services-container {
+display: grid;
+justify-content: center;
 }
 
-#services-list li {
-  font-size: 14px;
-  line-height: 1.5em;
-  justify-content: center;
+.services-container li {
+  font-size: 1em;
+  list-style-type: none;
+  text-align: center;
 }
 
 }
