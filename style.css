@@ -342,6 +342,7 @@ p {
   .text-wrapper {
     padding-left:  10px;
     padding-right: 10px;
+    margin: 5% auto;
   }
 
   .email {
@@ -457,7 +458,8 @@ justify-content: center;
 }
 
 .services-container li {
-  font-size: 1em;
+  font-size: 1.2em;
+  font-weight: bolder;
   list-style-type: none;
   text-align: center;
 }
