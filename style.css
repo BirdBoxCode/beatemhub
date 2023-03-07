@@ -121,6 +121,23 @@ h4 {
   margin: auto;
 }
 
+.services-container {
+  columns: 2;
+  column-gap: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-container li {
+color: white;
+font-weight:lighter;
+list-style:square;
+line-height: 1.3em;
+text-align: left;
+font-size: 1.5em;
+}
+
 p {
   margin: 00px 20px;
   font: 35px 'Montserrat', sans-serif;
@@ -340,6 +357,10 @@ p {
     padding-bottom: 20px;
 }
 
+  h4 {
+    font-size: 8px;
+  }
+
   h5 {
     padding: 0px;
   }
@@ -427,6 +448,18 @@ p {
 
 .wrapper2 {
   height: 25rem;
+}
+
+/* media services page */
+.services-container {
+display: grid;
+justify-content: center;
+}
+
+.services-container li {
+  font-size: 1em;
+  list-style-type: none;
+  text-align: center;
 }
 
 }
