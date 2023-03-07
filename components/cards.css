@@ -380,3 +380,10 @@
   opacity: 1;
   transition: all 0.35s;
 }
+
+/* EVENT SECTION */
+
+.event-wrapper {
+  display: grid;
+  justify-content: center;
+}

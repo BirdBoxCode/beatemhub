@@ -23,11 +23,6 @@ display: inline-flex;
   width: 50%;
 }
 
-h5 {
-  font-size: 25px;
-  text-align: center;
-}
-
 .footer-right {
   display: block;
 }
@@ -37,11 +32,4 @@ h5 {
   color: white;
   font-size: 15px;
   font-weight: lighter;
-}
-
-p2 {
-  color: white;
-  font-style: italic;
-  font-size: 15px;
-  display: block;
 }
