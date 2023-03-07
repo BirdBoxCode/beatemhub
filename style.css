@@ -121,6 +121,19 @@ h4 {
   margin: auto;
 }
 
+.container h4 {
+
+
+}
+
+#services-list {
+color: white;
+font-weight: bold;
+list-style:square;
+line-height: 1.3em;
+text-align: left;
+}
+
 p {
   margin: 00px 20px;
   font: 35px 'Montserrat', sans-serif;
@@ -427,6 +440,17 @@ p {
 
 .wrapper2 {
   height: 25rem;
+}
+
+/* media services page */
+#services-container {
+display: block;
+}
+
+#services-list li {
+  font-size: 14px;
+  line-height: 1.5em;
+  justify-content: center;
 }
 
 }
