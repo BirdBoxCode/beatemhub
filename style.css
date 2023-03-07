@@ -490,6 +490,9 @@ justify-content: center;
   text-align: center;
 }
 
+/* REFERENCES MEDIA QUERIES */
+.slider .slide-track-1 {
+  width: 2000px;
 }
 
  /* Custom, iPhone Retina */
