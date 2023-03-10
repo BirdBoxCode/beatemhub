@@ -14,13 +14,18 @@
 }
 
 .footer-container {
-display: inline-flex;
+display: block;
 }
 
 .footer-left {
   text-align: center;
   display: block;
-  width: 50%;
+
+}
+
+#email {
+  font-size: 1.2em;
+  padding: 10px 0px;
 }
 
 .footer-right {
@@ -32,4 +37,8 @@ display: inline-flex;
   color: white;
   font-size: 15px;
   font-weight: lighter;
+}
+
+#social-icons-bot {
+  display: inline-block;
 }
