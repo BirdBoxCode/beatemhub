@@ -24,6 +24,7 @@ display: block;
 }
 
 #email {
+  font-family: 'Orbitron', sans-serif;
   font-size: 1.2em;
   padding: 10px 0px;
 }

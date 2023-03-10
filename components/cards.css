@@ -134,14 +134,14 @@
   justify-content: center;
   align-items: center;
   /* background-color: #000000; */
-  font-family: 'Baloo Paaji 2', cursive;
+  font-family: 'Orbitron', sans-serif;
   overflow-x: hidden;
 }
 
 .card {
   background-color: #2C1546;
   height: auto;
-  width: 20rem;
+  width: 21rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -228,11 +228,12 @@
   border: none;
   cursor: pointer;
   line-height: 1.5;
-  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   padding: 0.75em 2em;
   letter-spacing: 0.05rem;
   margin: 0.5em;
   width: 13rem;
+  margin-bottom: 20px;
 }
 
 .btn:focus {
@@ -296,7 +297,8 @@
 
 .grid-container {
   display: grid;
-
+  margin: 10px 10px;
+  text-align: center;
   grid-gap: 20px;
   font-size: 1.2em;
 }
@@ -338,6 +340,7 @@
   display: none;
 }
 .tab-label {
+  font-family: 'Orbitron', sans-serif;
   position: relative;
   display: block;
   line-height: 2.75em;
