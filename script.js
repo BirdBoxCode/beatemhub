@@ -34,7 +34,7 @@ function slowScrollToElement(elementId) {
   }
     var startPosition = window.pageYOffset;
     var distance = elementPosition - startPosition;
-    var duration = 1200;
+    var duration = 1000;
     var start = null;
 
   window.requestAnimationFrame(step);
