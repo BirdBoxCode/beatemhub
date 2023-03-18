@@ -28,10 +28,12 @@ body {
 /* PAGE-SECTIONS */
 .section2 {
   background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1678981581/Beat%20Em%20Hub/Untitled_design_xhdgyt.png");
-  height: auto;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: fixed;
-}
+  }
+
 .content-wrapper {
   padding: 100px;
 }
@@ -461,13 +463,13 @@ p2 {
     width: 100%;
   }
 
-  .section2{
+  .section2 {
     background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1678981581/Beat%20Em%20Hub/Untitled_design_xhdgyt.png");
-    background-size: auto;
-    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-attachment: fixed;
-    overflow-x: hidden;
-  }
+    }
 
   .content-wrapper {
     padding: 10px;
