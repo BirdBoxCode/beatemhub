@@ -444,7 +444,7 @@ p2 {
 
   .bgimg-1, .bgimg-1-bottom {
     background-size: 800px;
-    height: 800px;
+    height: 1000px;
     background-attachment: scroll !important;
     overflow-x: hidden;
   }
