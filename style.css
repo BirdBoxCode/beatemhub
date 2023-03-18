@@ -459,9 +459,9 @@ p2 {
   .bgimg-10,
   .bgimg-11,
   .bgimg-3 {
-    height: 100px;
+    height: 380px;
     background-attachment: scroll !important;
-    width: 100%;
+    background-size: 700px;
   }
 
   .mobile-images {
