@@ -58,3 +58,7 @@
 .bgimg-10 {
   background-image: url("https://github.com/ThiefinaboX/beatemhub/blob/main/docs/hux-retro.png?raw=true");
 }
+
+.mobile-images {
+  display: none;
+}
