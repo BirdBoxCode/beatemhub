@@ -486,6 +486,7 @@ p2 {
 
   .caption {
     font-size: 15px;
+    width: 80%;
   }
 
   .open .mobile-menu {
