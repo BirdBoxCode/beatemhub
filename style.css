@@ -469,6 +469,7 @@ p2 {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    overflow-x: hidden;
     }
 
   .content-wrapper {
