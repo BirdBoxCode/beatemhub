@@ -107,6 +107,7 @@ h1 {
   text-align: center;
   text-size-adjust: auto;
   padding: 00px 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -115,6 +116,7 @@ h2 {
   font-size: 40px;
   color: white;
   font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h3 {
@@ -123,6 +125,7 @@ h3 {
   font-size: 50px;
   color: #0eebdc;
   margin: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h4 {
@@ -131,23 +134,27 @@ h4 {
   font-size: 30px;
   color: #0eebdc;
   margin: auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h5 {
   font-size: 25px;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p {
   margin: 00px 20px;
   font-family: 'Kanit', sans-serif;
   font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p2 {
   font-size: 30px;
   /* font-style: italic; */
   font-family: 'Kanit', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 p3 {
@@ -156,6 +163,7 @@ p3 {
   font-weight: 100;
   font-size: 15px;
   display: block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .services-container {

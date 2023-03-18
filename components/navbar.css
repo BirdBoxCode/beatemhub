@@ -32,6 +32,7 @@ ul {
   justify-content: space-around;
   width: 100%;
   padding: 00px 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 ul a {
@@ -107,6 +108,7 @@ transform: rotate(180deg) translate(-6px, -8px);
 
 #social-icons {
 padding-right: 20px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .icons {

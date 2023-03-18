@@ -27,6 +27,7 @@ display: block;
   font-family: 'Orbitron', sans-serif;
   font-size: 1.2em;
   padding: 10px 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .footer-right {
@@ -42,4 +43,5 @@ display: block;
 
 #social-icons-bot {
   display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
