@@ -464,13 +464,13 @@ p2 {
     width: 100%;
   }
 
+  .mobile-images {
+    display: contents;
+  }
+
   .section2 {
-    background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1679154295/Beat%20Em%20Hub/temp-black_ddlnei.png");
-    /* background-size: cover; */
-    height: 100%;
-    /* background-attachment: fixed; */
-    overflow-x: hidden;
-    }
+    display: none;
+  }
 
   .content-wrapper {
     padding: 10px;
