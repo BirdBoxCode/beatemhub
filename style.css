@@ -465,13 +465,11 @@ p2 {
   }
 
   .section2 {
-    background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1678981581/Beat%20Em%20Hub/Untitled_design_xhdgyt.png");
-    background-size: 1400px;
+    background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1679151829/Beat%20Em%20Hub/conts-long_lfgmc4.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     overflow-x: hidden;
-    /* background-attachment: scroll !important; */
     }
 
   .content-wrapper {
