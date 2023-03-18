@@ -466,7 +466,7 @@ p2 {
 
   .section2 {
     background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1679151829/Beat%20Em%20Hub/conts-long_lfgmc4.png");
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment: fixed;
     overflow-x: hidden;
     }
