@@ -462,8 +462,9 @@ p2 {
   }
 
   .section2{
-
-    height: auto;
+    background-image: url("https://res.cloudinary.com/depkh8amy/image/upload/v1678981581/Beat%20Em%20Hub/Untitled_design_xhdgyt.png");
+    height: 800px;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     overflow-x: hidden;
