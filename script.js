@@ -56,6 +56,6 @@ function easeInOutCubic(t, b, c, d) {
 // SCROLL INTO VIEW
 
 AOS.init({
-  duration: 1000,
+  duration: 800,
   offset: 200,
 })
