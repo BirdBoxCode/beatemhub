@@ -62,3 +62,9 @@
 .mobile-images {
   display: none;
 }
+
+/* EVENTS */
+#gg {
+  width: 40em;
+  margin: -5em auto;
+}

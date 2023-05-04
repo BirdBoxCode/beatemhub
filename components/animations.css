@@ -39,7 +39,7 @@
 .slider:before {
   background: linear-gradient(
       to right,
-      #black 0%,
+      black 0%,
       hsla(0, 0%, 100%, 0) 100%
   );
   content: "";
