@@ -3,10 +3,11 @@
   margin: 40px auto;
   padding: auto;
   display: flex;
+  gap: 2em;
 }
 
 .caption {
-  margin: auto;
+  margin: auto auto;
   padding: 0.3em 0.6em;
   text-align: center;
   letter-spacing: 4px;
