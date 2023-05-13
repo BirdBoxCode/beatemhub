@@ -10,17 +10,17 @@
 .center-footer {
   background-color: #2C1546;
   text-align: center;
-  padding: 40px 40px;
+  padding: 1em;
 }
 
 .footer-container {
-display: block;
+display: flex;
+justify-content: center;
 }
 
 .footer-left {
   text-align: center;
   display: block;
-
 }
 
 #email {
@@ -35,7 +35,6 @@ display: block;
 }
 
 .center-footer p {
-  background: #2C1546;
   color: white;
   font-size: 15px;
   font-weight: lighter;
