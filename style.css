@@ -236,6 +236,13 @@ font-size: 1.5em;
 
 /* MEDIA QUERIES */
 
+@media only screen and (max-width : 1326px) {
+
+  .photo_grid {
+    width: 60%;
+  }
+}
+
  /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   #about-img {
@@ -267,10 +274,6 @@ font-size: 1.5em;
     background-attachment: scroll !important;
     width: 100%;
   }
-
-  /* .photo_grid {
-    width: 100%;
-  } */
 
 }
 
