@@ -420,3 +420,15 @@
     /* padding: 40px 0; */
     text-align: center;
 }
+
+/* REFERENCES */
+
+.past_projects_wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Creates 3 rows with equal height */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates columns that fit container width, with a minimum of 200px and equal width */
+  grid-gap: 10px;
+  width: 80vw;
+  margin: auto auto;
+  /* padding: 40 40px; */
+}
