@@ -413,22 +413,16 @@
   justify-content: center;
 }
 
-  .embed {
+  .past_projects {
     display: block;
     justify-content: center;
     background: #2C1546;
-    /* padding: 40px 0; */
+    padding: 10px 20px;
     text-align: center;
 }
 
 /* REFERENCES */
 
-.past_projects_wrapper {
-  display: grid;
-  grid-template-rows: repeat(3, 1fr); /* Creates 3 rows with equal height */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates columns that fit container width, with a minimum of 200px and equal width */
-  grid-gap: 10px;
-  width: 80vw;
-  margin: auto auto;
-  /* padding: 40 40px; */
+.photo_grid {
+  /* margin: 40px 0px; */
 }

@@ -71,6 +71,11 @@
 
 /* REFERENCES */
 
-.media_net {
-  height: 20%;
+
+.media_net_portrait {
+  height: 30em;
+}
+
+.media_net_landscape {
+  height: 20em;
 }
