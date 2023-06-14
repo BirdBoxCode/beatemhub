@@ -81,8 +81,8 @@ body {
   /* background-color: #000000; */
   text-align: center;
   position: relative;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
@@ -106,7 +106,7 @@ h1 {
   color: #0eebdc;
   text-align: center;
   text-size-adjust: auto;
-  padding: 20px 40px;
+  padding: 0px 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -144,7 +144,7 @@ h5 {
 }
 
 p {
-  margin: 00px 20px;
+  margin: 0px 20px;
   font-family: 'Kanit', sans-serif;
   font-size: 1.8em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -209,6 +209,7 @@ font-size: 1.5em;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
+  height: 80vh;
 }
 
 /* Page Banners */
