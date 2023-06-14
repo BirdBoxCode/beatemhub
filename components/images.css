@@ -79,10 +79,10 @@
 
 .media_net_portrait {
   height: 30em;
-
+  max-width: 100vw  ;
 }
 
 .media_net_landscape {
   height: 20em;
-
+  max-width: 100vw;
 }
