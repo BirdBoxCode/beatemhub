@@ -71,11 +71,18 @@
 
 /* REFERENCES */
 
+.photo_grid {
+  display: block;
+  width: 80%;
+  margin: auto auto;
+}
 
 .media_net_portrait {
   height: 30em;
+
 }
 
 .media_net_landscape {
   height: 20em;
+
 }
