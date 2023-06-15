@@ -209,7 +209,7 @@ font-size: 1.5em;
   background-size: cover;
   background-attachment: fixed;
   overflow-x: hidden;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 /* Page Banners */
