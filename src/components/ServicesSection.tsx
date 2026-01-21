@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
+import { SectionWrapper } from '@/components/SectionWrapper';
 
 const services = [
   {
@@ -55,101 +56,98 @@ export function ServicesSection() {
   const activeService = services.find(s => s.id === activeId) || services[0];
 
   return (
-    <section id="services" className="relative w-full py-20 overflow-hidden">
+    <SectionWrapper id="services" lineColor="blue">
         
-       {/* Background Graphic (Blue Character) */}
-       <div className="absolute left-0 top-10 pointer-events-none hidden md:block">
+       {/* Background Graphic (Blue Character) - Kept absolute but relative to wrapper */}
+       <div className="absolute left-[-40px] top-10 pointer-events-none hidden md:block opacity-50">
           <Image src="/images/blue-char-side.png" alt="" width={80} height={200} className="object-contain" />
        </div>
 
-       <div className="max-w-[1300px] mx-auto px-5">
           
-          {/* Header */}
-          <div className="grid md:grid-cols-2 gap-10 mb-20">
-              <div className="flex flex-col gap-4">
-                  <h3 className="text-xl font-bold font-roboto text-white">Services</h3>
-                  <h2 className="text-4xl md:text-6xl font-kode-mono font-bold leading-tight uppercase">
-                      <span className="text-blue">CREATE YOUR IMMERSIVE</span><br />
-                      <span className="text-white">GAMING AREA</span>
-                  </h2>
-              </div>
-              <div className="flex items-center">
-                  <p className="text-xl font-roboto text-white">
-                      <strong className="text-white">Tailored to your vision,</strong> we create customised gaming environments that elevate your event and bring your venue to life.
-                  </p>
-              </div>
-          </div>
+       {/* Header */}
+       <div className="grid md:grid-cols-2 gap-10 mb-20">
+           <div className="flex flex-col gap-4">
+               <h3>Services</h3>
+               <h2>
+                   <span className="text-blue">CREATE YOUR IMMERSIVE</span><br />
+                   <span className="text-white">GAMING AREA</span>
+               </h2>
+           </div>
+           <div className="flex items-center">
+               <p className="text-xl">
+                   <strong className="text-white">Tailored to your vision,</strong> we create customised gaming environments that elevate your event and bring your venue to life.
+               </p>
+           </div>
+       </div>
 
-          {/* Interactive Bento Grid */}
-          <div className="bg-bento-background border border-border rounded-[20px] p-10 grid lg:grid-cols-3 gap-10">
-              
-              {/* List Column */}
-              <div className="flex flex-col gap-4 border-r border-white/10 pr-10">
-                  {services.map((service) => (
-                      <button 
-                        key={service.id}
-                        onClick={() => setActiveId(service.id)}
-                        className={cn(
-                            "text-left text-lg font-bold font-mono py-2 transition-all relative",
-                            activeId === service.id ? "text-medium-orchid" : "text-white hover:text-white/80"
-                        )}
-                      >
-                          {service.label}
-                          {activeId === service.id && (
-                              <motion.div 
-                                layoutId="underline"
-                                className="absolute bottom-0 left-0 w-full h-[2px] bg-medium-orchid shadow-[0_0_6px_rgba(255,255,255,0.6)]"
-                              />
-                          )}
-                      </button>
-                  ))}
-              </div>
+       {/* Interactive Bento Grid */}
+       <div className="bg-bento-background border border-border rounded-[20px] p-10 grid lg:grid-cols-3 gap-10">
+           
+           {/* List Column */}
+           <div className="flex flex-col gap-4 border-r border-white/10 pr-10">
+               {services.map((service) => (
+                   <button 
+                     key={service.id}
+                     onClick={() => setActiveId(service.id)}
+                     className={cn(
+                         "text-left text-lg font-bold font-mono py-2 transition-all relative",
+                         activeId === service.id ? "text-medium-orchid" : "text-white hover:text-white/80"
+                     )}
+                   >
+                       {service.label}
+                       {activeId === service.id && (
+                           <motion.div 
+                             layoutId="underline"
+                             className="absolute bottom-0 left-0 w-full h-[2px] bg-medium-orchid shadow-[0_0_6px_rgba(255,255,255,0.6)]"
+                           />
+                       )}
+                   </button>
+               ))}
+           </div>
 
-              {/* Image Column */}
-              <div className="relative aspect-video lg:aspect-auto rounded-xl overflow-hidden bg-black/50">
-                  <AnimatePresence mode="wait">
-                      <motion.div 
-                        key={activeService.image}
-                        initial={{ opacity: 0, x: 20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -20 }}
-                        transition={{ duration: 0.3 }}
-                        className="relative w-full h-full"
+           {/* Image Column */}
+           <div className="relative aspect-video lg:aspect-auto rounded-xl overflow-hidden bg-black/50">
+               <AnimatePresence mode="wait">
+                   <motion.div 
+                     key={activeService.image}
+                     initial={{ opacity: 0, x: 20 }}
+                     animate={{ opacity: 1, x: 0 }}
+                     exit={{ opacity: 0, x: -20 }}
+                     transition={{ duration: 0.3 }}
+                     className="relative w-full h-full"
+                   >
+                       <Image 
+                         src={activeService.image} 
+                         alt={activeService.title}
+                         fill
+                         className="object-contain p-4"
+                       />
+                   </motion.div>
+               </AnimatePresence>
+           </div>
+
+            {/* Description Column */}
+            <div className="flex flex-col justify-center gap-6 relative">
+                 <AnimatePresence mode="wait">
+                      <motion.div
+                         key={activeService.id}
+                         initial={{ opacity: 0, y: 10 }}
+                         animate={{ opacity: 1, y: 0 }}
+                         exit={{ opacity: 0, y: -10 }}
+                         transition={{ duration: 0.3 }}
                       >
-                          <Image 
-                            src={activeService.image} 
-                            alt={activeService.title}
-                            fill
-                            className="object-contain p-4"
-                          />
+                          <h3 className="text-2xl font-bold font-mono text-white mb-4">{activeService.title}</h3>
+                          <p className="text-lg font-roboto text-font-gray leading-relaxed">{activeService.description}</p>
                       </motion.div>
-                  </AnimatePresence>
-              </div>
-
-               {/* Description Column */}
-               <div className="flex flex-col justify-center gap-6 relative">
-                    <AnimatePresence mode="wait">
-                         <motion.div
-                            key={activeService.id}
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -10 }}
-                            transition={{ duration: 0.3 }}
-                         >
-                             <h3 className="text-2xl font-bold font-mono text-white mb-4">{activeService.title}</h3>
-                             <p className="text-lg font-roboto text-font-gray leading-relaxed">{activeService.description}</p>
-                         </motion.div>
-                    </AnimatePresence>
-                    
-                    {/* Decorative Posters Image */}
-                    <div className="mt-auto pt-10">
-                         <Image src="/images/posters.png" alt="" width={300} height={200} className="object-contain" />
-                    </div>
-               </div>
-
-          </div>
+                 </AnimatePresence>
+                 
+                 {/* Decorative Posters Image */}
+                 <div className="mt-auto pt-10">
+                      <Image src="/images/posters.png" alt="" width={300} height={200} className="object-contain" />
+                 </div>
+            </div>
 
        </div>
-    </section>
+    </SectionWrapper>
   );
 }
