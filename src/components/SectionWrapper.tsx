@@ -7,12 +7,13 @@ interface SectionWrapperProps {
   id?: string;
   className?: string;
   children: React.ReactNode;
-  lineColor?: 'pink' | 'blue' | 'green' | 'purple'; // Preset gradients
+  lineColor?: 'pink' | 'blue' | 'green' | 'purple' | 'pinkToBlue'; // Preset gradients
   noLine?: boolean;
 }
 
 const gradients = {
   pink: 'linear-gradient(to bottom, transparent 0%, rgb(223, 14, 219) 20%, rgb(223, 14, 219) 80%, transparent 100%)',
+  pinkToBlue: 'linear-gradient(to bottom, transparent 0%, rgb(223, 14, 219) 10%, rgb(223, 14, 219) 40%, rgb(163, 211, 255) 100%)',
   blue: 'linear-gradient(to bottom, transparent 0%, rgb(163, 211, 255) 20%, rgb(163, 211, 255) 80%, transparent 100%)',
   green: 'linear-gradient(to bottom, transparent 0%, rgb(163, 255, 195) 20%, rgb(163, 255, 195) 80%, transparent 100%)',
   purple: 'linear-gradient(to bottom, transparent 0%, rgb(198, 163, 255) 20%, rgb(198, 163, 255) 80%, transparent 100%)',
