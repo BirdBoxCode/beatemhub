@@ -6,7 +6,7 @@ export function GamesGroundSection() {
     <SectionWrapper id="gg" lineColor="green">
         <div className="grid md:grid-cols-2 gap-10">
             <div className="flex flex-col gap-6">
-                <h2 className="text-white">Games Ground</h2>
+                <h3>Games Ground</h3>
                 <p>
                     <strong className="text-white">We are proud co-organizers of Games Ground Berlin</strong>, the premier gaming industry and community festival, backed by the Berlin Senate & Medienboard Berlin-Brandenburg. With over 4,500 attendees from around the world, Games Ground is a vibrant hub for gamers, creators, and industry leaders.
                 </p>

@@ -30,7 +30,7 @@ export function SectionWrapper({
     <section 
       id={id} 
       className={cn(
-        "relative w-full py-20 overflow-hidden", // Base padding consistent with site rhythm
+        "relative w-full py-24 overflow-hidden", // Base padding consistent with site rhythm
         className
       )}
     >

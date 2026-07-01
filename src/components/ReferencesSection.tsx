@@ -1,6 +1,6 @@
 'use client';
 
-import { Marquee } from '@/components/Marquee';
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -24,17 +24,18 @@ const partners = [
 
 export function ReferencesSection() {
     const [current, setCurrent] = useState(0);
+    const [partner, setPartner] = useState(0);
 
     const nextSlide = () => setCurrent((prev) => (prev + 1) % references.length);
     const prevSlide = () => setCurrent((prev) => (prev - 1 + references.length) % references.length);
+    const nextPartner = () => setPartner((prev) => (prev + 1) % partners.length);
+    const prevPartner = () => setPartner((prev) => (prev - 1 + partners.length) % partners.length);
 
     return (
         <SectionWrapper id="references" lineColor="purple">
-            
+
             {/* Header */}
             <div className="grid md:grid-cols-2 gap-10 mb-20">
-                {/* Removed manual decoration column, handled by wrapper line */}
-                
                 <div className="md:col-start-2 col-span-2">
                     <h3 className="mb-4">References</h3>
                     <h2>
@@ -44,51 +45,75 @@ export function ReferencesSection() {
                 </div>
             </div>
 
-            {/* Content Grid */}
-            <div className="grid lg:grid-cols-4 gap-6">
-                
-                {/* Text Box */}
-                <div className="bg-bento-background border border-border rounded-[20px] p-8 flex flex-col justify-between">
+            {/* Bento Grid — matches Webflow .main_design_grid.col4 (4 cols x 3 rows) */}
+            <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-5">
+
+                {/* Text Box — spans 2 cols / 3 rows (tall left half) */}
+                <div className="lg:col-span-2 lg:row-span-3 bg-bento-background border border-border rounded-[15px] px-10 py-5 flex flex-col justify-center">
                      <p className="text-lg text-font-gray leading-relaxed">
                         <strong className="text-white">Our team of industry experts</strong> ensure an unforgettable experience at your event. From parties & festivals to conferences, we bring nostalgia, and excitement with our cutting-edge gaming setups, retro arcades, and immersive entertainment.
                      </p>
                 </div>
 
-                {/* Video Carousel */}
-                <div className="lg:col-span-2 relative aspect-video bg-black rounded-[20px] overflow-hidden group">
+                {/* Video Carousel — spans 2 cols / 2 rows (top-right) */}
+                <div className="lg:col-span-2 lg:row-span-2 relative aspect-video bg-bento-background border border-border rounded-[15px] overflow-hidden">
                     <AnimatePresence mode="popLayout">
-                        <motion.div 
+                        <motion.div
                             key={current}
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             className="absolute inset-0 w-full h-full"
                         >
-                            <iframe 
+                            <iframe
                                 src={references[current]}
                                 className="w-full h-full border-0"
-                                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" 
+                                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                                 allowFullScreen
                             />
                         </motion.div>
                     </AnimatePresence>
 
-                    {/* Controls */}
-                    <div className="absolute inset-0 flex items-center justify-between p-4 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                         <button onClick={prevSlide} className="pointer-events-auto bg-black/50 p-2 rounded-full hover:bg-white/20 transition-colors">
+                    {/* Controls (always visible, like Webflow slider arrows) */}
+                    <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
+                         <button onClick={prevSlide} aria-label="Previous video" className="pointer-events-auto bg-black/40 p-2 rounded-full hover:bg-white/20 transition-colors">
                              <ChevronLeft className="text-white" />
                          </button>
-                         <button onClick={nextSlide} className="pointer-events-auto bg-black/50 p-2 rounded-full hover:bg-white/20 transition-colors">
+                         <button onClick={nextSlide} aria-label="Next video" className="pointer-events-auto bg-black/40 p-2 rounded-full hover:bg-white/20 transition-colors">
                              <ChevronRight className="text-white" />
                          </button>
                     </div>
                 </div>
 
-                {/* Visual/Partner Box */}
-                <div className="bg-bento-background border border-border rounded-[20px] p-8 flex items-center justify-center">
-                     <div className="w-full">
-                         <Marquee items={partners} />
-                     </div>
+                {/* Partner Logo Slider — spans 2 cols / 1 row (bottom-right) */}
+                <div className="lg:col-span-2 lg:row-span-1 relative bg-bento-background border border-border rounded-[15px] py-2.5 flex items-center">
+                    <button onClick={prevPartner} aria-label="Previous partner" className="absolute left-3 z-10 p-2 text-white hover:opacity-70 transition-opacity">
+                        <ChevronLeft />
+                    </button>
+
+                    <div className="flex-1 flex items-center justify-center px-12 min-h-[80px]">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={partner}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="relative h-[60px] w-full"
+                            >
+                                <Image
+                                    src={partners[partner]}
+                                    alt="Partner logo"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </motion.div>
+                        </AnimatePresence>
+                    </div>
+
+                    <button onClick={nextPartner} aria-label="Next partner" className="absolute right-3 z-10 p-2 text-white hover:opacity-70 transition-opacity">
+                        <ChevronRight />
+                    </button>
                 </div>
 
             </div>
