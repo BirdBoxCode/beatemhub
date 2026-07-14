@@ -32,7 +32,13 @@ export function ReferencesSection() {
     const prevPartner = () => setPartner((prev) => (prev - 1 + partners.length) % partners.length);
 
     return (
-        <SectionWrapper id="references" lineColor="purple">
+        <SectionWrapper
+            id="references"
+            line="green"
+            markers={[
+                { src: '/images/green-char-side.png', size: 82, top: '10px', glow: 'rgba(163,255,195,0.5)' },
+            ]}
+        >
 
             {/* Header */}
             <div className="grid md:grid-cols-2 gap-10 mb-20">

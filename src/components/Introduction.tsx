@@ -5,7 +5,16 @@ import { SectionWrapper } from '@/components/SectionWrapper';
 
 export function Introduction() {
   return (
-    <SectionWrapper id="intro" lineColor="pinkToBlue" className="-mt-[100px] relative z-10">
+    <SectionWrapper
+      id="intro"
+      line="intro"
+      className="-mt-[100px] relative z-10"
+      markers={[
+        { src: '/images/triangle.svg', size: 30, top: '60px', glow: 'rgba(200,200,220,0.25)' },
+        { src: '/images/pink-char-side.png', size: 82, top: '40%', glow: 'rgba(223,14,219,0.5)' },
+        { src: '/images/triangle-side-blue.svg', size: 70, top: '66%', glow: 'rgba(163,211,255,0.5)' },
+      ]}
+    >
       <div className="flex flex-col gap-10">
         
         {/* Main Heading */}

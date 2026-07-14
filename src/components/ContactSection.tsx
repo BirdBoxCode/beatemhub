@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
 import { SectionWrapper } from '@/components/SectionWrapper';
 
@@ -18,26 +17,17 @@ export function ContactSection() {
   };
 
   return (
-    <SectionWrapper id="contact" lineColor="green">
-         
+    <SectionWrapper
+      id="contact"
+      line="blue"
+      markers={[
+        { src: '/images/boo.png', size: 82, top: '22%', glow: 'rgba(163,211,255,0.5)' },
+        { src: '/images/down-triangle-side-green.svg', size: 44, top: '100%', glow: 'rgba(163,255,195,0.45)' },
+      ]}
+    >
          <div className="flex flex-col md:flex-row gap-10">
 
-             {/* Left Column — narrow strip with small Boo (Webflow column-left = 100px) */}
-             <div className="flex md:flex-col items-center justify-start shrink-0 md:w-[100px] gap-4">
-                 <Image src="/images/boo.png" alt="" width={100} height={100} className="object-contain" />
-                 {/* Blue vertical line (Webflow .div-block-17) */}
-                 <div className="hidden md:block w-1 h-[300px] rounded-md bg-blue" />
-                 {/* Green down-triangle decoration */}
-                 <Image
-                    src="/images/down-triangle-side-green.svg"
-                    alt=""
-                    width={100}
-                    height={100}
-                    className="hidden md:block object-contain"
-                 />
-             </div>
-
-             {/* Right Column (Form) — sits directly on the dark background, no card */}
+             {/* Form — sits directly on the dark background, no card */}
              <div className="flex flex-col gap-6 w-full max-w-[460px]">
                  <h3>Contact Us</h3>
 

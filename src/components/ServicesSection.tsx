@@ -56,14 +56,13 @@ export function ServicesSection() {
   const activeService = services.find(s => s.id === activeId) || services[0];
 
   return (
-    <SectionWrapper id="services" lineColor="blue">
-        
-       {/* Background Graphic (Blue Character) - Kept absolute but relative to wrapper */}
-       <div className="absolute left-[-40px] top-10 pointer-events-none hidden md:block opacity-50">
-          <Image src="/images/blue-char-side.png" alt="" width={80} height={200} className="object-contain" />
-       </div>
-
-          
+    <SectionWrapper
+      id="services"
+      line="services"
+      markers={[
+        { src: '/images/blue-char-side.png', size: 82, top: '30px', glow: 'rgba(163,250,255,0.5)' },
+      ]}
+    >
        {/* Header */}
        <div className="grid md:grid-cols-2 gap-10 mb-20">
            <div className="flex flex-col gap-4">

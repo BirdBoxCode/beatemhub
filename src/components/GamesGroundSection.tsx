@@ -3,7 +3,13 @@ import { SectionWrapper } from '@/components/SectionWrapper';
 
 export function GamesGroundSection() {
   return (
-    <SectionWrapper id="gg" lineColor="green">
+    <SectionWrapper
+      id="gg"
+      line="gg"
+      markers={[
+        { src: '/images/triangle-side-green.svg', size: 70, top: '30px', glow: 'rgba(163,255,195,0.5)' },
+      ]}
+    >
         <div className="grid md:grid-cols-2 gap-10">
             <div className="flex flex-col gap-6">
                 <h3>Games Ground</h3>
