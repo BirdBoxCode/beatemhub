@@ -79,7 +79,17 @@
       "Bash(node _secshot.mjs http://localhost:3000/ \"#references\" /tmp/compare/s_refs2.png)",
       "Bash(node _secshot.mjs http://localhost:3000/ \"#gg\" /tmp/compare/s_gg2.png)",
       "Bash(node _secshot.mjs http://localhost:3000/ \"#contact\" /tmp/compare/s_contact2.png)",
-      "Bash(node _spine.mjs http://localhost:3000/ /tmp/compare/nx_spine2.png)"
+      "Bash(node _spine.mjs http://localhost:3000/ /tmp/compare/nx_spine2.png)",
+      "Bash(python3 *)",
+      "Bash(curl -s -o /dev/null -w \"8080:%{http_code}\\\\n\" http://localhost:8080/index.html)",
+      "Bash(npx playwright *)",
+      "Bash(NODE_PATH=/Users/life/code/BirdBoxCode/beatemhub/node_modules node /private/tmp/claude-501/-Users-life-code-BirdBoxCode-beatemhub/d12fbbb3-d28a-492b-ad89-bc77c42241f1/scratchpad/measure.js)",
+      "Bash(npx tsc *)",
+      "Bash(echo \"--- tsc exit: $? ---\")",
+      "Bash(NODE_PATH=/Users/life/code/BirdBoxCode/beatemhub/node_modules node /private/tmp/claude-501/-Users-life-code-BirdBoxCode-beatemhub/d12fbbb3-d28a-492b-ad89-bc77c42241f1/scratchpad/shots.js)",
+      "Bash(npx next *)",
+      "Bash(NODE_PATH=/Users/life/code/BirdBoxCode/beatemhub/node_modules node *)",
+      "Bash(npx eslint *)"
     ]
   }
 }

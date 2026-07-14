@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { SectionWrapper } from '@/components/SectionWrapper';
+import { SectionWrapper, SPINE_LEAD_IN } from '@/components/SectionWrapper';
 
 const references = [
    "https://customer-ui5gikvnytrm15ts.cloudflarestream.com/2d2dd44597b94de6653594f14b2bde9d/iframe?poster=https%3A%2F%2Fcustomer-ui5gikvnytrm15ts.cloudflarestream.com%2F2d2dd44597b94de6653594f14b2bde9d%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600",
@@ -34,9 +34,10 @@ export function ReferencesSection() {
     return (
         <SectionWrapper
             id="references"
-            line="green"
-            markers={[
-                { src: '/images/green-char-side.png', size: 82, top: '10px', glow: 'rgba(163,255,195,0.5)' },
+            spine={[
+                { kind: 'line', background: '#a3ffc3', h: SPINE_LEAD_IN },
+                { kind: 'icon', src: '/images/green-char-side.png', glow: 'rgba(163,255,195,0.5)' },
+                { kind: 'line', background: '#a3ffc3' },
             ]}
         >
 
@@ -51,18 +52,19 @@ export function ReferencesSection() {
                 </div>
             </div>
 
-            {/* Bento Grid — matches Webflow .main_design_grid.col4 (4 cols x 3 rows) */}
-            <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-5">
+            {/* Bento Grid — matches Webflow .main_design_grid.col4 (4 cols x 3 rows).
+                Bleeds left past the spine, so the line runs under it. */}
+            <div className="md:-ml-[93px] grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-3 gap-5">
 
                 {/* Text Box — spans 2 cols / 3 rows (tall left half) */}
-                <div className="lg:col-span-2 lg:row-span-3 bg-bento-background border border-border rounded-[15px] px-10 py-5 flex flex-col justify-center">
+                <div className="lg:col-span-2 lg:row-span-3 bg-bento-bg border border-border rounded-[15px] px-10 py-5 flex flex-col justify-center">
                      <p className="text-lg text-font-gray leading-relaxed">
                         <strong className="text-white">Our team of industry experts</strong> ensure an unforgettable experience at your event. From parties & festivals to conferences, we bring nostalgia, and excitement with our cutting-edge gaming setups, retro arcades, and immersive entertainment.
                      </p>
                 </div>
 
                 {/* Video Carousel — spans 2 cols / 2 rows (top-right) */}
-                <div className="lg:col-span-2 lg:row-span-2 relative aspect-video bg-bento-background border border-border rounded-[15px] overflow-hidden">
+                <div className="lg:col-span-2 lg:row-span-2 relative aspect-video bg-bento-bg border border-border rounded-[15px] overflow-hidden">
                     <AnimatePresence mode="popLayout">
                         <motion.div
                             key={current}
@@ -92,7 +94,7 @@ export function ReferencesSection() {
                 </div>
 
                 {/* Partner Logo Slider — spans 2 cols / 1 row (bottom-right) */}
-                <div className="lg:col-span-2 lg:row-span-1 relative bg-bento-background border border-border rounded-[15px] py-2.5 flex items-center">
+                <div className="lg:col-span-2 lg:row-span-1 relative bg-bento-bg border border-border rounded-[15px] py-2.5 flex items-center">
                     <button onClick={prevPartner} aria-label="Previous partner" className="absolute left-3 z-10 p-2 text-white hover:opacity-70 transition-opacity">
                         <ChevronLeft />
                     </button>

@@ -53,7 +53,7 @@ export function Navbar() {
   return (
     <>
       {/* Mobile Nav Toggle (Visible on small screens) */}
-      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-bento-background md:hidden border-b border-sidebar-border">
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-bento-bg md:hidden border-b border-sidebar-border">
          <Link href="#home" className="text-white font-mono font-bold text-lg">
             BEAT EM HUB
          </Link>
@@ -69,7 +69,7 @@ export function Navbar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-40 bg-bento-background/95 backdrop-blur-sm flex flex-col items-center justify-center gap-8 md:hidden"
+          className="fixed inset-0 z-40 bg-bento-bg/95 backdrop-blur-sm flex flex-col items-center justify-center gap-8 md:hidden"
         >
             <NavLink href="#home" onClick={() => setIsOpen(false)}>Home</NavLink>
             <NavLink href="#services" onClick={() => setIsOpen(false)}>Services</NavLink>
@@ -79,8 +79,10 @@ export function Navbar() {
       )}
       </AnimatePresence>
 
-      {/* Desktop Navbar (Split Layout) */}
-      <div className="hidden md:flex fixed top-[40px] left-0 right-0 max-w-[1148px] mx-auto z-50 justify-between items-start pointer-events-none px-5">
+      {/* Desktop Navbar (Split Layout) — full-width with a 1300px inner wrap, so the
+          left block lines up with the section containers (Webflow .navbar.left) */}
+      <div className="hidden md:block fixed top-[40px] left-0 right-0 z-50 pointer-events-none px-5">
+       <div className="max-w-[1300px] mx-auto flex justify-between items-start">
 
         {/* Left Nav Block (Links + white underline) */}
         <motion.nav
@@ -124,6 +126,7 @@ export function Navbar() {
            <SocialLink href="https://discord.com/invite/Sd22pa438Q" icon="/images/discord.svg" />
            <SocialLink href="https://de.linkedin.com/company/beat-em-hub" icon="/images/linkedin.svg" />
         </motion.div>
+       </div>
       </div>
     </>
   );

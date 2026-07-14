@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#e4ebf3]/10 bg-bento-background pt-20 pb-10 px-5 text-white">
+    <footer className="border-t border-[#e4ebf3]/10 bg-bento-bg pt-20 pb-10 px-5 text-white">
       <div className="max-w-[1148px] mx-auto flex flex-col gap-10">
         
         {/* Top Section */}

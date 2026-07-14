@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { SectionWrapper } from '@/components/SectionWrapper';
+import { SectionWrapper, SPINE_LEAD_IN } from '@/components/SectionWrapper';
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -19,10 +19,11 @@ export function ContactSection() {
   return (
     <SectionWrapper
       id="contact"
-      line="blue"
-      markers={[
-        { src: '/images/boo.png', size: 82, top: '22%', glow: 'rgba(163,211,255,0.5)' },
-        { src: '/images/down-triangle-side-green.svg', size: 44, top: '100%', glow: 'rgba(163,255,195,0.45)' },
+      spine={[
+        { kind: 'line', background: '#a3d3ff', h: SPINE_LEAD_IN },
+        { kind: 'icon', src: '/images/boo.png', glow: 'rgba(163,211,255,0.5)' },
+        { kind: 'line', background: '#a3d3ff' },
+        { kind: 'icon', src: '/images/down-triangle-side-green.svg', glow: 'rgba(163,255,195,0.45)' },
       ]}
     >
          <div className="flex flex-col md:flex-row gap-10">
