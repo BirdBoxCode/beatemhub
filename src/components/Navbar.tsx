@@ -119,7 +119,7 @@ export function Navbar() {
           variants={navVariants}
           animate={isScrolling ? "active" : "idle"}
           initial="idle"
-          className="pointer-events-auto bg-[#131314] border-2 border-[#9e9e9e80] rounded-[20px] px-4 py-3 flex flex-col items-center shadow-lg will-change-transform"
+          className="pointer-events-auto bg-[#131314]/60 backdrop-blur-md border border-white/10 rounded-[20px] px-4 py-3 flex flex-col items-center shadow-[0_8px_30px_rgba(0,0,0,0.25)] will-change-transform"
         >
           {/* Links */}
           <div className="flex items-center">
@@ -132,7 +132,7 @@ export function Navbar() {
 
           {/* White underline (Webflow nav-line-white.svg) */}
           <div className="w-full px-[15px]">
-            <Image src="/images/nav-line-white.svg" alt="" width={300} height={4} className="w-full h-auto" />
+            <Image src="/images/nav-line-white.svg" alt="" width={300} height={4} className="w-full h-auto opacity-50" />
           </div>
         </motion.nav>
 
@@ -141,7 +141,7 @@ export function Navbar() {
           variants={navVariants}
           animate={isScrolling ? "active" : "idle"}
           initial="idle"
-          className="pointer-events-auto bg-[#131314] border-2 border-[#9e9e9e80] rounded-[20px] w-[100px] px-4 py-4 flex flex-col items-center gap-[15px] shadow-lg will-change-transform"
+          className="pointer-events-auto bg-[#131314]/60 backdrop-blur-md border border-white/10 rounded-[20px] w-[100px] px-4 py-4 flex flex-col items-center gap-[15px] shadow-[0_8px_30px_rgba(0,0,0,0.25)] will-change-transform"
         >
            {/* Logo */}
            <Link href="/" className="hover:opacity-80 transition-opacity">
@@ -150,7 +150,7 @@ export function Navbar() {
 
            {/* Pink line divider (Webflow nav-line-pink.png) */}
            <div className="w-full">
-              <Image src="/images/nav-line-pink.png" alt="" width={80} height={4} className="w-full h-auto" />
+              <Image src="/images/nav-line-pink.png" alt="" width={80} height={4} className="w-full h-auto opacity-60" />
            </div>
 
            <SocialLink href="https://www.instagram.com/beatemhub/" icon="/images/insta.svg" />
@@ -179,7 +179,7 @@ function DesktopNavLink({ href, children, active = false }: { href: string; chil
     return (
       <Link
         href={href}
-        className={`${active ? 'text-medium-orchid' : 'text-white'} font-mono font-semibold text-[16px] hover:text-medium-orchid transition-colors uppercase tracking-[1px] whitespace-nowrap px-[15px] pb-[10px]`}
+        className={`${active ? 'text-medium-orchid' : 'text-white/70'} font-mono font-medium text-[16px] hover:text-white transition-colors uppercase tracking-[1px] whitespace-nowrap px-[15px] pb-[10px]`}
       >
         {children}
       </Link>

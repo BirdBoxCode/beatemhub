@@ -171,3 +171,20 @@
 .mask-gradient {
   mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
+
+/* ---- Hero "Portal" ambient motion ---- */
+@keyframes beh-twinkle {
+  0%, 100% { opacity: 0.15; transform: scale(0.85); }
+  50%      { opacity: 1;    transform: scale(1); }
+}
+@keyframes beh-drift {
+  0%   { transform: translateY(0) translateX(0); opacity: 0; }
+  10%  { opacity: 0.9; }
+  90%  { opacity: 0.9; }
+  100% { transform: translateY(-140px) translateX(24px); opacity: 0; }
+}
+
+/* Respect users who prefer less motion: freeze ambient hero animations. */
+@media (prefers-reduced-motion: reduce) {
+  .beh-star, .beh-ember { animation: none !important; opacity: 0.6 !important; }
+}
