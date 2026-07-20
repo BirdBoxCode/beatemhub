@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SectionWrapper } from '@/components/SectionWrapper';
+import { SectionWrapper, SPINE_LEAD_IN } from '@/components/SectionWrapper';
 
 const services = [
   {
@@ -56,14 +56,14 @@ export function ServicesSection() {
   const activeService = services.find(s => s.id === activeId) || services[0];
 
   return (
-    <SectionWrapper id="services" lineColor="blue">
-        
-       {/* Background Graphic (Blue Character) - Kept absolute but relative to wrapper */}
-       <div className="absolute left-[-40px] top-10 pointer-events-none hidden md:block opacity-50">
-          <Image src="/images/blue-char-side.png" alt="" width={80} height={200} className="object-contain" />
-       </div>
-
-          
+    <SectionWrapper
+      id="services"
+      spine={[
+        { kind: 'line', background: '#a3faff', h: SPINE_LEAD_IN },
+        { kind: 'icon', src: '/images/blue-char-side.png', glow: 'rgba(163,250,255,0.5)' },
+        { kind: 'line', background: 'linear-gradient(180deg, #a3faff 0%, #a3ffc3 100%)' },
+      ]}
+    >
        {/* Header */}
        <div className="grid md:grid-cols-2 gap-10 mb-20">
            <div className="flex flex-col gap-4">
@@ -80,8 +80,8 @@ export function ServicesSection() {
            </div>
        </div>
 
-       {/* Interactive Bento Grid */}
-       <div className="bg-bento-background border border-border rounded-[20px] p-10 grid lg:grid-cols-3 gap-10">
+       {/* Interactive Bento Grid — bleeds left past the spine, so the line runs under it */}
+       <div className="md:-ml-[93px] bg-bento-bg border border-border rounded-[20px] p-10 grid lg:grid-cols-3 gap-10">
            
            {/* List Column */}
            <div className="flex flex-col gap-4 border-r border-white/10 pr-10">

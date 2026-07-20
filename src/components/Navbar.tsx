@@ -53,7 +53,7 @@ export function Navbar() {
   return (
     <>
       {/* Mobile Nav Toggle (Visible on small screens) */}
-      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-bento-background md:hidden border-b border-sidebar-border">
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-4 bg-bento-bg md:hidden border-b border-sidebar-border">
          <Link href="#home" className="text-white font-mono font-bold text-lg">
             BEAT EM HUB
          </Link>
@@ -69,7 +69,7 @@ export function Navbar() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 z-40 bg-bento-background/95 backdrop-blur-sm flex flex-col items-center justify-center gap-8 md:hidden"
+          className="fixed inset-0 z-40 bg-bento-bg/95 backdrop-blur-sm flex flex-col items-center justify-center gap-8 md:hidden"
         >
             <NavLink href="#home" onClick={() => setIsOpen(false)}>Home</NavLink>
             <NavLink href="#services" onClick={() => setIsOpen(false)}>Services</NavLink>
@@ -79,48 +79,54 @@ export function Navbar() {
       )}
       </AnimatePresence>
 
-      {/* Desktop Navbar (Split Layout) */}
-      <div className="hidden md:flex fixed top-[40px] left-0 right-0 max-w-[1148px] mx-auto z-50 justify-between items-start pointer-events-none px-5">
-        
-        {/* Left Nav Block (Logo + Links) */}
-        <motion.nav 
+      {/* Desktop Navbar (Split Layout) — full-width with a 1300px inner wrap, so the
+          left block lines up with the section containers (Webflow .navbar.left) */}
+      <div className="hidden md:block fixed top-[40px] left-0 right-0 z-50 pointer-events-none px-5">
+       <div className="max-w-[1300px] mx-auto flex justify-between items-start">
+
+        {/* Left Nav Block (Links + white underline) */}
+        <motion.nav
           variants={navVariants}
           animate={isScrolling ? "active" : "idle"}
           initial="idle"
-          className="pointer-events-auto bg-[#131314] border-2 border-[#9e9e9e80] rounded-[20px] px-6 py-2 flex items-center gap-6 h-[70px] shadow-lg will-change-transform"
+          className="pointer-events-auto bg-[#131314] border-2 border-[#9e9e9e80] rounded-[20px] px-4 py-3 flex flex-col items-center shadow-lg will-change-transform"
         >
-          {/* Logo Section */}
-          <div className="flex items-center gap-4">
-            <Link href="/" className="hover:opacity-80 transition-opacity">
-               <Image src="/images/beh-white.svg" alt="Beat Em Hub" width={40} height={40} className="w-auto h-[40px]" />
-            </Link>
-            
-            {/* Divider */}
-            <div className="relative w-[2px] h-[30px]">
-                 <Image src="/images/nav-line-pink.png" alt="" fill className="object-cover" />
-            </div>
+          {/* Links */}
+          <div className="flex items-center">
+            <DesktopNavLink href="#home" active>Home</DesktopNavLink>
+            <DesktopNavLink href="#services">Services</DesktopNavLink>
+            <DesktopNavLink href="#references">References</DesktopNavLink>
+            <DesktopNavLink href="#contact">Contact</DesktopNavLink>
           </div>
 
-          {/* Links */}
-          <div className="flex items-center gap-6">
-            <DesktopNavLink href="#home">Home</DesktopNavLink>
-            <DesktopNavLink href="#services">SERVICES</DesktopNavLink>
-            <DesktopNavLink href="#references">References</DesktopNavLink>
-            <DesktopNavLink href="#contact">CONTACT</DesktopNavLink>
+          {/* White underline (Webflow nav-line-white.svg) */}
+          <div className="w-full px-[15px]">
+            <Image src="/images/nav-line-white.svg" alt="" width={300} height={4} className="w-full h-auto" />
           </div>
         </motion.nav>
 
-        {/* Right Nav Block (Socials) */}
-        <motion.div 
+        {/* Right Nav Block (Logo + pink line + stacked socials) */}
+        <motion.div
           variants={navVariants}
           animate={isScrolling ? "active" : "idle"}
           initial="idle"
-          className="pointer-events-auto bg-[#131314] border-2 border-[#9e9e9e80] rounded-[20px] px-5 flex items-center gap-4 h-[70px] shadow-lg will-change-transform"
+          className="pointer-events-auto bg-[#131314] border-2 border-[#9e9e9e80] rounded-[20px] w-[100px] px-4 py-4 flex flex-col items-center gap-[15px] shadow-lg will-change-transform"
         >
+           {/* Logo */}
+           <Link href="/" className="hover:opacity-80 transition-opacity">
+              <Image src="/images/beh-white.svg" alt="Beat Em Hub" width={68} height={68} className="w-[68px] h-auto" />
+           </Link>
+
+           {/* Pink line divider (Webflow nav-line-pink.png) */}
+           <div className="w-full">
+              <Image src="/images/nav-line-pink.png" alt="" width={80} height={4} className="w-full h-auto" />
+           </div>
+
            <SocialLink href="https://www.instagram.com/beatemhub/" icon="/images/insta.svg" />
            <SocialLink href="https://discord.com/invite/Sd22pa438Q" icon="/images/discord.svg" />
            <SocialLink href="https://de.linkedin.com/company/beat-em-hub" icon="/images/linkedin.svg" />
         </motion.div>
+       </div>
       </div>
     </>
   );
@@ -138,11 +144,11 @@ function NavLink({ href, children, onClick }: { href: string; children: React.Re
   );
 }
 
-function DesktopNavLink({ href, children }: { href: string; children: React.ReactNode }) {
+function DesktopNavLink({ href, children, active = false }: { href: string; children: React.ReactNode; active?: boolean }) {
     return (
-      <Link 
-        href={href} 
-        className="text-white font-mono font-bold text-base hover:text-medium-orchid transition-colors uppercase tracking-wider whitespace-nowrap"
+      <Link
+        href={href}
+        className={`${active ? 'text-medium-orchid' : 'text-white'} font-mono font-semibold text-[16px] hover:text-medium-orchid transition-colors uppercase tracking-[1px] whitespace-nowrap px-[15px] pb-[10px]`}
       >
         {children}
       </Link>
@@ -152,7 +158,7 @@ function DesktopNavLink({ href, children }: { href: string; children: React.Reac
 function SocialLink({ href, icon }: { href: string; icon: string }) {
     return (
         <Link href={href} target="_blank" className="hover:opacity-80 transition-opacity">
-            <Image src={icon} alt="Social Icon" width={24} height={24} />
+            <Image src={icon} alt="Social Icon" width={28} height={28} />
         </Link>
     )
 }
