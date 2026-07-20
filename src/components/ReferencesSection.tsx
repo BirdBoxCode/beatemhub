@@ -22,14 +22,31 @@ const partners = [
     '/images/Civo-Logo.png'
 ];
 
-export function ReferencesSection() {
-    const [current, setCurrent] = useState(0);
-    const [partner, setPartner] = useState(0);
+// Video and logo run the same variants off the same direction, so the pair
+// moves as one unit.
+const slideVariants = {
+    enter: (direction: number) => ({ opacity: 0, x: direction > 0 ? 40 : -40 }),
+    center: { opacity: 1, x: 0 },
+    exit: (direction: number) => ({ opacity: 0, x: direction > 0 ? -40 : 40 }),
+};
 
-    const nextSlide = () => setCurrent((prev) => (prev + 1) % references.length);
-    const prevSlide = () => setCurrent((prev) => (prev - 1 + references.length) % references.length);
-    const nextPartner = () => setPartner((prev) => (prev + 1) % partners.length);
-    const prevPartner = () => setPartner((prev) => (prev - 1 + partners.length) % partners.length);
+const SLIDE_TRANSITION = { duration: 0.45, ease: [0.4, 0, 0.2, 1] as const };
+
+export function ReferencesSection() {
+    // One index drives both the video and the partner logo — references[i] is
+    // that partner's event, matching the slide order of the original sliders.
+    const [current, setCurrent] = useState(0);
+    const [direction, setDirection] = useState(0);
+
+    const paginate = (step: number) => {
+        setDirection(step);
+        setCurrent((prev) => (prev + step + references.length) % references.length);
+    };
+
+    const goTo = (index: number) => {
+        setDirection(index > current ? 1 : -1);
+        setCurrent(index);
+    };
 
     return (
         <SectionWrapper
@@ -43,10 +60,10 @@ export function ReferencesSection() {
 
             {/* Header */}
             <div className="grid md:grid-cols-2 gap-10 mb-20">
-                <div className="md:col-start-2 col-span-2">
+                <div>
                     <h3 className="mb-4">References</h3>
                     <h2>
-                        <span className="text-white">SAFE SPACES</span><br />
+                        <span className="text-green">SAFE SPACES</span><br />
                         <span className="text-white">FOR DEATH MATCHES</span>
                     </h2>
                 </div>
@@ -63,65 +80,91 @@ export function ReferencesSection() {
                      </p>
                 </div>
 
-                {/* Video Carousel — spans 2 cols / 2 rows (top-right) */}
-                <div className="lg:col-span-2 lg:row-span-2 relative aspect-video bg-bento-bg border border-border rounded-[15px] overflow-hidden">
-                    <AnimatePresence mode="popLayout">
-                        <motion.div
-                            key={current}
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            exit={{ opacity: 0 }}
-                            className="absolute inset-0 w-full h-full"
-                        >
-                            <iframe
-                                src={references[current]}
-                                className="w-full h-full border-0"
-                                allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-                                allowFullScreen
-                            />
-                        </motion.div>
-                    </AnimatePresence>
+                {/* Reference Carousel — spans 2 cols / 3 rows (tall right half).
+                    Video and partner logo share one card and one index. */}
+                <div className="lg:col-span-2 lg:row-span-3 flex flex-col bg-bento-bg border border-border rounded-[15px] overflow-hidden">
 
-                    {/* Controls (always visible, like Webflow slider arrows) */}
-                    <div className="absolute inset-0 flex items-center justify-between p-4 pointer-events-none">
-                         <button onClick={prevSlide} aria-label="Previous video" className="pointer-events-auto bg-black/40 p-2 rounded-full hover:bg-white/20 transition-colors">
-                             <ChevronLeft className="text-white" />
-                         </button>
-                         <button onClick={nextSlide} aria-label="Next video" className="pointer-events-auto bg-black/40 p-2 rounded-full hover:bg-white/20 transition-colors">
-                             <ChevronRight className="text-white" />
-                         </button>
-                    </div>
-                </div>
-
-                {/* Partner Logo Slider — spans 2 cols / 1 row (bottom-right) */}
-                <div className="lg:col-span-2 lg:row-span-1 relative bg-bento-bg border border-border rounded-[15px] py-2.5 flex items-center">
-                    <button onClick={prevPartner} aria-label="Previous partner" className="absolute left-3 z-10 p-2 text-white hover:opacity-70 transition-opacity">
-                        <ChevronLeft />
-                    </button>
-
-                    <div className="flex-1 flex items-center justify-center px-12 min-h-[80px]">
-                        <AnimatePresence mode="wait">
+                    {/* Video */}
+                    <div className="relative aspect-video w-full overflow-hidden">
+                        <AnimatePresence initial={false} mode="popLayout" custom={direction}>
                             <motion.div
-                                key={partner}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.3 }}
-                                className="relative h-[60px] w-full"
+                                key={current}
+                                custom={direction}
+                                variants={slideVariants}
+                                initial="enter"
+                                animate="center"
+                                exit="exit"
+                                transition={SLIDE_TRANSITION}
+                                className="absolute inset-0"
                             >
-                                <Image
-                                    src={partners[partner]}
-                                    alt="Partner logo"
-                                    fill
-                                    className="object-contain"
+                                <iframe
+                                    src={references[current]}
+                                    className="w-full h-full border-0"
+                                    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+                                    allowFullScreen
                                 />
                             </motion.div>
                         </AnimatePresence>
                     </div>
 
-                    <button onClick={nextPartner} aria-label="Next partner" className="absolute right-3 z-10 p-2 text-white hover:opacity-70 transition-opacity">
-                        <ChevronRight />
-                    </button>
+                    {/* Divider */}
+                    <div className="h-px bg-border shrink-0" />
+
+                    {/* Partner logo + shared controls */}
+                    <div className="relative flex flex-1 items-center gap-2 px-3 pt-4 pb-8">
+                        <button
+                            onClick={() => paginate(-1)}
+                            aria-label="Previous reference"
+                            className="shrink-0 p-2 rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                        >
+                            <ChevronLeft />
+                        </button>
+
+                        <div className="relative flex-1 h-[60px] overflow-hidden">
+                            <AnimatePresence initial={false} mode="popLayout" custom={direction}>
+                                <motion.div
+                                    key={current}
+                                    custom={direction}
+                                    variants={slideVariants}
+                                    initial="enter"
+                                    animate="center"
+                                    exit="exit"
+                                    transition={SLIDE_TRANSITION}
+                                    className="absolute inset-0"
+                                >
+                                    <Image
+                                        src={partners[current]}
+                                        alt={`Partner ${current + 1} logo`}
+                                        fill
+                                        className="object-contain"
+                                    />
+                                </motion.div>
+                            </AnimatePresence>
+                        </div>
+
+                        <button
+                            onClick={() => paginate(1)}
+                            aria-label="Next reference"
+                            className="shrink-0 p-2 rounded-full text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                        >
+                            <ChevronRight />
+                        </button>
+
+                        {/* Dots */}
+                        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+                            {references.map((_, i) => (
+                                <button
+                                    key={i}
+                                    onClick={() => goTo(i)}
+                                    aria-label={`Go to reference ${i + 1}`}
+                                    aria-current={i === current}
+                                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                                        i === current ? 'w-5 bg-green' : 'w-1.5 bg-white/25 hover:bg-white/50'
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
             </div>
