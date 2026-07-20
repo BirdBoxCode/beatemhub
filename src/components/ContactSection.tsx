@@ -4,10 +4,11 @@ import { useState, useRef } from 'react';
 import { SectionWrapper, SPINE_LEAD_IN } from '@/components/SectionWrapper';
 
 // Web3Forms access key — generate a free one at https://web3forms.com by entering
-// the inbox you want submissions delivered to. Safe to expose: it can only send to
-// the address it's registered against. Override in .env.local if you prefer.
+// the inbox you want submissions delivered to. Safe to hardcode/expose: it can only
+// send to the address it's registered against, and NEXT_PUBLIC_ vars end up in the
+// client bundle anyway. Env override still supported if you ever want to rotate it.
 const WEB3FORMS_ACCESS_KEY =
-  process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? 'YOUR_ACCESS_KEY_HERE';
+  process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? 'ae5d3ba0-cd68-413c-be8f-75eb77a67956';
 
 type Status = 'idle' | 'submitting' | 'success' | 'error';
 
