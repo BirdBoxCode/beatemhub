@@ -18,7 +18,7 @@ export function Footer() {
             </div>
 
             <div className="flex flex-col gap-4">
-                <Link href="#" className="text-font-gray hover:text-white transition-colors">Services</Link>
+                <Link href="#services" className="text-font-gray hover:text-white transition-colors">Services</Link>
                 <Link href="#references" className="text-font-gray hover:text-white transition-colors">References</Link>
             </div>
 
@@ -40,9 +40,9 @@ export function Footer() {
             <div className="text-sm text-font-gray">© 2022 Beat Em Hub. All rights reserved.</div>
             
             <div className="flex gap-4">
-                 <Link href="#" className="hover:opacity-80"><Image src="/images/discord.svg" alt="Discord" width={24} height={24} /></Link>
-                 <Link href="#" className="hover:opacity-80"><Image src="/images/insta.svg" alt="Instagram" width={24} height={24} /></Link>
-                 <Link href="#" className="hover:opacity-80"><Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} /></Link>
+                 <Link href="https://discord.com/invite/Sd22pa438Q" target="_blank" className="hover:opacity-80"><Image src="/images/discord.svg" alt="Discord" width={24} height={24} /></Link>
+                 <Link href="https://www.instagram.com/beatemhub/" target="_blank" className="hover:opacity-80"><Image src="/images/insta.svg" alt="Instagram" width={24} height={24} /></Link>
+                 <Link href="https://de.linkedin.com/company/beat-em-hub" target="_blank" className="hover:opacity-80"><Image src="/images/linkedin.svg" alt="LinkedIn" width={24} height={24} /></Link>
             </div>
         </div>
 

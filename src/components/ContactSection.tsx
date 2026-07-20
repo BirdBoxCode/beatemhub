@@ -131,7 +131,7 @@ export function ContactSection() {
                      </button>
 
                      {status === 'success' && (
-                         <p className="p2 text-[#a3ffc3]">Thanks for getting in touch — we&apos;ll be in contact soon.</p>
+                         <p className="p2 text-[#a3ffc3]">Thanks for getting in touch - we&apos;ll be in contact soon!</p>
                      )}
                      {status === 'error' && (
                          <p className="p2 text-[#ff9a9a]">Something went wrong. Please try again or email us directly.</p>

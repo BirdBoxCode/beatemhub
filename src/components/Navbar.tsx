@@ -2,15 +2,44 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
+
+const NAV_SECTIONS = [
+  { href: '#home', id: 'home', label: 'Home' },
+  { href: '#services', id: 'services', label: 'Services' },
+  { href: '#references', id: 'references', label: 'References' },
+  { href: '#contact', id: 'contact', label: 'Contact' },
+] as const;
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [activeId, setActiveId] = useState<string>('home');
   const scrollTimeout = useRef<NodeJS.Timeout | null>(null);
   const { scrollY } = useScroll();
+
+  // Scroll-spy: highlight the nav item whose section is currently in view.
+  useEffect(() => {
+    const sections = NAV_SECTIONS
+      .map(({ id }) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveId(entry.target.id);
+        });
+      },
+      // Thin band in the vertical middle of the viewport — the section
+      // crossing it is the "active" one.
+      { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     // Treat top of page as not scrolling (idle)
@@ -32,18 +61,18 @@ export function Navbar() {
   });
 
   const navVariants = {
-    idle: { 
+    idle: {
       y: 0,
       scale: 1,
-      transition: { 
+      transition: {
         y: { duration: 0.3, ease: "easeInOut" },
         scale: { delay: 0.3, duration: 0.3, ease: "easeInOut" }
       } as const
     },
-    active: { 
+    active: {
       scale: 0.95,
       y: -40,
-      transition: { 
+      transition: {
         scale: { duration: 0.3, ease: "easeInOut" },
         y: { delay: 0.3, duration: 0.3, ease: "easeInOut" }
       } as const
@@ -65,16 +94,17 @@ export function Navbar() {
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
       {isOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-40 bg-bento-bg/95 backdrop-blur-sm flex flex-col items-center justify-center gap-8 md:hidden"
         >
-            <NavLink href="#home" onClick={() => setIsOpen(false)}>Home</NavLink>
-            <NavLink href="#services" onClick={() => setIsOpen(false)}>Services</NavLink>
-            <NavLink href="#references" onClick={() => setIsOpen(false)}>References</NavLink>
-            <NavLink href="#contact" onClick={() => setIsOpen(false)}>Contact</NavLink>
+            {NAV_SECTIONS.map(({ href, id, label }) => (
+              <NavLink key={id} href={href} active={activeId === id} onClick={() => setIsOpen(false)}>
+                {label}
+              </NavLink>
+            ))}
         </motion.div>
       )}
       </AnimatePresence>
@@ -93,10 +123,11 @@ export function Navbar() {
         >
           {/* Links */}
           <div className="flex items-center">
-            <DesktopNavLink href="#home" active>Home</DesktopNavLink>
-            <DesktopNavLink href="#services">Services</DesktopNavLink>
-            <DesktopNavLink href="#references">References</DesktopNavLink>
-            <DesktopNavLink href="#contact">Contact</DesktopNavLink>
+            {NAV_SECTIONS.map(({ href, id, label }) => (
+              <DesktopNavLink key={id} href={href} active={activeId === id}>
+                {label}
+              </DesktopNavLink>
+            ))}
           </div>
 
           {/* White underline (Webflow nav-line-white.svg) */}
@@ -132,12 +163,12 @@ export function Navbar() {
   );
 }
 
-function NavLink({ href, children, onClick }: { href: string; children: React.ReactNode; onClick?: () => void }) {
+function NavLink({ href, children, active = false, onClick }: { href: string; children: React.ReactNode; active?: boolean; onClick?: () => void }) {
   return (
-    <Link 
-      href={href} 
+    <Link
+      href={href}
       onClick={onClick}
-      className="text-white font-mono font-bold text-2xl hover:text-medium-orchid transition-colors uppercase tracking-widest"
+      className={`${active ? 'text-medium-orchid' : 'text-white'} font-mono font-bold text-2xl hover:text-medium-orchid transition-colors uppercase tracking-widest`}
     >
       {children}
     </Link>

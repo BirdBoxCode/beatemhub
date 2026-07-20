@@ -128,6 +128,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html {
+    scroll-behavior: smooth;
+    /* Offset anchor targets so they don't land under the fixed navbar */
+    scroll-padding-top: 120px;
+  }
   body {
     @apply bg-background text-foreground font-sans;
   }
